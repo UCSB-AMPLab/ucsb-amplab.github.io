@@ -11,7 +11,7 @@ menu_settings:
     - title: 'Projects'
       url: '/'
     - title: 'People'
-      url: '/blog/'
+      url: '/people/'
 
 
 footer_settings:
@@ -20,7 +20,7 @@ footer_settings:
   tagline:
 
 hero_settings:
-  background_image: /images/backgrounds/background-hero.svg
+  background_image: /images/backgrounds/background-hero-blue.svg
 
 post_settings:
   grid_spacing: 10
