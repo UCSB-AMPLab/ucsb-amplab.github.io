@@ -14,28 +14,29 @@
 
 	.footer__title {
 	    font-family: $title-font;
-	    font-size: $sitetitle-small;
-	    font-weight: $sitetitle-weight;
+	    font-size: 28px;
+	    font-weight: 100;
 	    letter-spacing: $sitetitle-spacing;
 	    line-height: 1;
-	    color: $text-dark-color;
+	    color: #fff;
 
 	    @include mq(tabletp) {
-	      font-size: $sitetitle-medium;
+	      font-size: 28px;
 	    }
 
 	    @include mq(laptop) {
-	      font-size: $sitetitle-large;
+	      font-size: 28px;
 	    }
 
-	    &:hover {
-	      color: $accent-color;
-	    }
+	    // &:hover {
+	    //   color: $accent-color;
+	    // }
 	}
 	
 	.footer__copyright {
 
 		@include mq(tabletp) {
+			color: #fff;
 			justify-self: center;
 			align-self: center;
 			text-align: right;
@@ -61,4 +62,43 @@
 			justify-self: end;
 		}
 	}
+}
+
+.footer-bottom {
+	@include transition(all 0.4s ease-in-out 0.8s);
+	padding: 64px 0;
+	
+	background: #002b4c;
+	margin-bottom: 10px;
+	padding: 16px 20px 48px 20px;
+	font-family: Avenir, "Century Gothic", sans-serif;
+	
+}
+
+.ucsb-copyright {
+	font-size: 12px;
+	margin-right: 16px;
+	color: #fff;
+	
+	a {
+		font-weight: 500;
+		margin-right: 16px;
+		color: #fff;
+	}
+	
+	a:hover {
+	  	color: #fff;
+	  	text-decoration: underline;
+	}
+}
+
+.footer-address {
+	margin: 12px 0;
+	color: #fff;
+	font-family: Avenir, "Century Gothic", sans-serif;
+	line-height: 24px;
+}
+
+.clair-logo {
+	max-width: 80%;
 }
