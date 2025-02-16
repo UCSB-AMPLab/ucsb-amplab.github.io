@@ -5,7 +5,7 @@ leadership:
   - Juan Cobo Betancourt
   - Pilar Ramírez Restrepo
   - Camilla Falanesca
-date: 2025-01-01 00:00:00
+date: 2025-01-02 00:00:00
 description: As part of this work, we are digitizing an archive of photographs of everyday life in the tugurios of Medellín, Colombia, taken in 1976 by Anne Tuzman and Glenn McNatt and preserved by Anne Fischel.
 featured_image: memories-of-the-city.jpeg
 accent_color: '#4C60E6'
@@ -19,7 +19,7 @@ To do so, this project draws on two archives, which we are digitizing, preservin
 
 The first concerns the **Tuguriano Movement** of Barrio Fidel Castro (the Moravia neighborhood), documented in [*Misa Colombiana* (1976)](https://vimeo.com/622927213), a film by Anne Fischel and Glenn McNatt. In collaboration with Fischel, the project is digitizing a collection of photographic materials that provide an intimate look at everyday life and political organizing in Moravia. 
 
-The second is an archive of oral histories collected by linguists Luz Stella Castañeda and José Ignacio Henao from the University of Antioquia in the 1990s and 2000s. Castañeda, Henao, and their students recorded and transcribed these in order to study *Parlache*, a sociolect spoken in Medellín that emerged in the 1980s amid economic instability and violence. This collection, which includes anonymized interviews and writings of marginalized youth, was key to their linguistic research, but has not been more broadly accessible.
+The second is an archive of oral histories collected by linguists Luz Stella Castañeda and José Ignacio Henao from the University of Antioquia in the 1990s and 2000s. Castañeda, Henao, and their students recorded and transcribed these in order to study ***Parlache***, a sociolect spoken in Medellín that emerged in the 1980s amid economic instability and violence. This collection, which includes anonymized interviews and writings of marginalized youth, was key to their linguistic research, but has not been more broadly accessible.
 
 By integrating multimedia elements such as video, photography, sound, and text, *Memories of the City* preserves and contextualizes these archival materials while providing valuable pedagogical tools for scholars, educators, and students. The project not only makes archival materials widely available but also fosters a deeper understanding of migration, political activism, urban history, and linguistic shifts in marginalized communities.
 
