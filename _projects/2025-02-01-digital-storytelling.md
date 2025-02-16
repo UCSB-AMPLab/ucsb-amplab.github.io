@@ -1,6 +1,6 @@
 ---
 title: Digital Storytelling
-subtitle: "Building digital infrastructure for object-based storytelling beyond the academy"
+subtitle: "Building digital infrastructure for object-based storytelling beyond the academy."
 leadership: 
   - Alicia Boswell, History of Art and Architecture, UCSB
   - Juan Cobo Betancourt, History, UCSB
