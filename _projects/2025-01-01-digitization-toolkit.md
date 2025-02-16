@@ -8,7 +8,7 @@ leadership:
 date: 2025-02-01 00:00:00
 description: "What happens when communities have the means to digitize and administer their own historical documentation? What if more people can decide what constitutes an archive: what is worth collecting, preserving, and sharing, and on what terms? How might this affect how visions and narratives of the past are written and taught in different contexts?"
 featured_image: digitization_toolkit.jpeg
-accent_color: '##EF5645'
+accent_color: '#A5469A'
 gallery_images:
   - digitization_toolkit.jpeg
 ---
