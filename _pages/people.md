@@ -8,24 +8,24 @@ featured_image: /images/social.jpg
 
 #### Administration
 ##### Juan Cobo Betancourt
-***Principal Investigator***
+***PI***
 
-Juan Cobo Betancourt is a historian of colonial Latin America and a scholar and practitioner of digital humanities and digital public history. He is associate professor of History at UCSB, where he also serves director of the [Latin American and Iberian Studies Program](https://lais.ucsb.edu) and [Center for Latin American and Iberian Research](https://clair.ucsb.edu). Learn more about his work [here](https://www.history.ucsb.edu/faculty/juan-cobo/).
+Juan Cobo Betancourt is a historian of colonial Latin America and a scholar and practitioner of digital humanities and digital public history. He is associate professor of History at UCSB, where he also serves director of the [Latin American and Iberian Studies Program](https://lais.ucsb.edu) and [Center for Latin American and Iberian Research](https://clair.ucsb.edu), and co-founder of the Colombian non-profit [Neogranadina](https://neogranadina.org). [Learn more](https://www.history.ucsb.edu/faculty/juan-cobo/).
 
 ##### Camilla Falanesca
-***AMPL Lab manager***
+***AMPL lab manager***
 
-Camilla Falanesca is PhD student in the Department of History. Her historical research explores the intersection of political economy and memory studies, with a regional focus on Tunisia and Algeria between the 19th and 20th centuries. Her digital humanities work focuses on archival preservation and community-engaged work in Latin America, and especially Colombia. She is also a member of [Neogranadina](https://neogranadina.org/en). Learn more about her work [here](https://www.history.ucsb.edu/graduate-student/camillafalanesca/).
+Camilla Falanesca is PhD student in the Department of History. Her historical research explores the intersection of political economy and memory studies, with a regional focus on Tunisia and Algeria between the 19th and 20th centuries. Her digital humanities work focuses on archival preservation and community-engaged work in Latin America, and especially Colombia. She is also a member of [Neogranadina](https://neogranadina.org/en). [Learn more](https://www.history.ucsb.edu/graduate-student/camillafalanesca/).
 
 #### Researchers and collaborators
 ##### Jairo Melo Flórez
 *Digital Humanities Research Facilitator, UCSB Library*
 
 ##### Santiago Muñoz Arbeláez
-*Assistant Professor of History, University of Texas at Austin*
+*Assistant Professor of History, University of Texas at Austin; Co-founder, Neogranadina*
 
 ##### Adelaida Ávila
-*UX/UI, web design/development, and digital communication specialist*
+*UX/UI, web design/development, and digital communication specialist, Neogranadina*
 
 #### Graduate Students
 ##### Lee Leal-Ramírez
