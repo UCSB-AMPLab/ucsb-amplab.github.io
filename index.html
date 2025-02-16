@@ -28,14 +28,12 @@ featured_image: /images/social.jpg
 	</section>
 	<section class="listing">
 		<div class="wrap">
-			<h1 style="padding-bottom: 50px">{{ page.title }}</h1>
-
 			{% for project in site.projects reversed %}
 
 			{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
 
 			<article class="project__preview">
-				<h3 class="project__title"><a href="{{ project.url | relative_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h3>
+				<h2 class="project__title"><a href="{{ project.url | relative_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h2>
 
 				<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
 					{% for image in project.gallery_images %}
@@ -48,7 +46,7 @@ featured_image: /images/social.jpg
 					<p class="project__description --small">
 						{{ project.description }}
 						<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
-							style="color: {{ accent_color }}; --color-var: {{ accent_color }}; border-bottom: none;">More details</a>
+							style="color: {{ accent_color }}; --color-var: {{ accent_color }}; border-bottom: none; font-family: 'Silkscreen', serif; font-size: 110%">More details</a>
 					</p>
 				</div>
 			</article>
@@ -59,7 +57,7 @@ featured_image: /images/social.jpg
 
 <!-- 	{% include section__about.html %} -->
 
-<section class="recent-posts">
+<!-- <section class="recent-posts">
 		<div class="wrap grid">
 			<header class="recent-posts__header">
 				<h4>Recent blog posts</h4>
@@ -74,5 +72,5 @@ featured_image: /images/social.jpg
 
 			<a href="{{ '/blog' | relative_url }}" class="action-bottom button--text--accent --right">All Posts</a>
 		</div>
-	</section>
+	</section> -->
 </div>
