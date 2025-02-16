@@ -8,7 +8,7 @@ leadership:
 date: 2025-01-02 00:00:00
 description: As part of this work, we are digitizing an archive of photographs of everyday life in the tugurios of Medellín, Colombia, taken in 1976 by Anne Tuzman and Glenn McNatt and preserved by Anne Fischel.
 featured_image: memories-of-the-city.jpeg
-accent_color: '#4C60E6'
+accent_color: '#EF5645'
 gallery_images:
   - memories-of-the-city.jpeg
 ---
