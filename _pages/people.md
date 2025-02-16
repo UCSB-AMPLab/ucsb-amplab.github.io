@@ -24,6 +24,9 @@ Camilla Falanesca is PhD student in the Department of History. Her historical re
 ##### Santiago Muñoz Arbeláez
 *Assistant Professor of History, University of Texas at Austin*
 
+##### Adelaida Ávila
+*UX/UI, web design/development, and digital communication specialist*
+
 #### Graduate Students
 ##### Lee Leal-Ramírez
 *Research Assistant, Santa Bárbara Mission Archive-Library*
