@@ -13,7 +13,7 @@ leadership:
 date: 2025-01-01 00:00:00
 description: A prototype platform and methodology that will allow scholars to present expert narratives aimed at different audiences through the display of born-digital or digitized objects, whether historical manuscripts, images, video or audio recordings, or 3D visualizations.
 featured_image: lab-placeholder.jpeg
-accent_color: '#EF5645'
+accent_color: '#A5469A'
 gallery_images:
   - lab-placeholder.jpeg
 ---
