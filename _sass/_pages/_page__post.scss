@@ -117,7 +117,7 @@
       font-size: 10px;
       line-height: 1.5;
       text-align: center;
-      color: $text-light-color;
+      color: $text-dark-color;
 
       &:hover {
         background: $text-light-color;
@@ -161,7 +161,7 @@
             line-height: 1.5;
             font-weight: $bold-weight;
             text-align: center;
-            color: $text-light-color;
+            color: $text-dark-color;
           }
           
           p {
@@ -172,6 +172,8 @@
             a.reversefootnote {
               border-bottom: 0;
               vertical-align: sub;
+              font-size: 18px;
+              color: $text-dark-color;
             }
           }
         }

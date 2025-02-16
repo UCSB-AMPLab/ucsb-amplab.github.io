@@ -19,6 +19,7 @@ h6,
 .subtitle {
   font-family: $title-font;
   color: $text-dark-color;
+  margin-top: 1rem;
 }
 
 h1,
@@ -118,7 +119,7 @@ h6,
 
   a {
     font-weight: 500;
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-color: transparentize($color: $accent-color, $amount: 0.8);
   }
 
@@ -149,6 +150,17 @@ p,
 
   @include mq(tabletp) {
     font-size: $p-size;
+  }
+  
+  a {
+    border-bottom: dotted;
+    border-color: $text-light-color;
+    border-width: 2px;
+    font-weight: 400;
+    
+    &:hover {
+    border-color: $accent-color;
+    }
   }
 }
 
@@ -182,7 +194,6 @@ blockquote {
 a {
   text-decoration: none;
   color: $text-dark-color;
-  font-weight: $bold-weight;
   @include transition(all 120ms ease-in-out);
 
   &:hover {
