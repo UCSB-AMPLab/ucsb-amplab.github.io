@@ -12,6 +12,8 @@ menu_settings:
       url: '/'
     - title: 'People'
       url: '/people/'
+    - title: 'Opportunities'
+      url: '/opportunities/'
 
 
 footer_settings:
@@ -72,8 +74,9 @@ color_settings:
   error_color: '#D64541'
 
 font_settings:
-  font_embed: '<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:wght@100..900|Ubuntu+Mono:400,700" rel="stylesheet">'
+  font_embed: '<link href="https://fonts.googleapis.com/css?family=Silkscreen:wght@400|Roboto+Slab:wght@100..900|Ubuntu+Mono:400,700" rel="stylesheet">'
   title_font: 'Roboto Slab, serif'
+  display_font: 'Silkscreen, serif'
   body_font: '"Ubuntu Mono", sans-serif'
   regular_weight: 100
   bold_weight: 600
