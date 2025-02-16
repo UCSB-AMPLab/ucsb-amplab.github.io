@@ -11,9 +11,9 @@ menu_settings:
     - title: 'Projects'
       url: '/'
     - title: 'People'
-      url: '/people/'
+      url: '/people'
     - title: 'Opportunities'
-      url: '/opportunities/'
+      url: '/opportunities'
 
 
 footer_settings:
