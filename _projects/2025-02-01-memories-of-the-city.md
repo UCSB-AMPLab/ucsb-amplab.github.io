@@ -15,7 +15,7 @@ gallery_images:
 
 ***Memories of the City: A Multimedia Archive of Medellín’s Recent History*** is a project to create a bilingual (English/Spanish) virtual exhibition explores memory, urban migration, and political struggles in Medellín, focusing on Moravia and other neighborhoods. Driven from rural areas by violence and a lack of opportunities, migrants poured into Medellín from the 1950s, building homes and communities that grew into massive shantytowns (*tugurios*). There they developed grassroots movements that united peasants, priests, students, and women to resist state-led evictions, defend and promote their rights, and seek political participation. While some efforts led to legalization of their neighborhoods and infrastructural improvements, repression, legal struggles, and eviction threats persist today.
 
-To do so, this project draws on two archives, which we are digitizing, preserving, and making available in digital form alongside the exibition. 
+To do so, this project draws on two archives, which we are digitizing, preserving, and making available in digital form alongside the exhibition. 
 
 The first concerns the **Tuguriano Movement** of Barrio Fidel Castro (the Moravia neighborhood), documented in [*Misa Colombiana* (1976)](https://vimeo.com/622927213), a film by Anne Fischel and Glenn McNatt. In collaboration with Fischel, the project is digitizing a collection of photographic materials that provide an intimate look at everyday life and political organizing in Moravia. 
 
