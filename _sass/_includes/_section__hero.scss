@@ -7,7 +7,7 @@
 
 .hero {
 	position: relative;
-	padding: 40px 0 160px;
+	padding: 5px 0 40px;
 
 	.wrap {
 		grid-gap: 0;
@@ -34,7 +34,7 @@
 	}
 
 	@include mq(tabletp) {
-		padding: 40px 0 180px;
+		padding: 40px 0 120px;
 
 		.wrap {
 			grid-template-columns: 1fr 1fr;

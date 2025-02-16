@@ -12,9 +12,17 @@
   .header__logo {
     display: block;
     align-self: center;
-    width: $logo-width;
+    width: 300px;
     position: relative;
     z-index: 10;
+    
+    @include mq(tabletl) {
+      width: 400px;
+    }
+    
+    @include mq(laptop) {
+      width: 500px;
+    }
   }
 
   .header__title {
@@ -199,18 +207,27 @@
       margin-bottom: 0px;
       
       &:not(:first-child) {
-        margin-left: 50px;
+        margin-left: 30px;
       }
     }
 
     .menu__list__item__link {
-      font-size: 24px;
+      font-size: 20px;
       line-height: 18px;
       display: inline-block;
       color: $text-dark-color;
       font-weight: $button-weight;
       letter-spacing: $button-spacing;
       text-transform: uppercase;
+      
+      @include mq(tabletl) {
+        font-size: 24px;
+      }
+      
+      @include mq(laptop) {
+        font-size: 28px;
+      }
+      
     }
 
     .menu__cta__link {
