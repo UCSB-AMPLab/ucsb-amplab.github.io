@@ -10,6 +10,12 @@ layout: default
 
 		<div class="wrap">
 			<h1 class="post__title">{{ page.title }}</h1>
+			<h6>
+				{%- for item in page.leadership -%}
+					{{ item }}<br>
+				{%- endfor -%}
+			</h6>
+			
 			<h2 class="post__subtitle subtitle--light">{{ page.subtitle }}</h2>
 		</div>
 
@@ -30,5 +36,5 @@ layout: default
 
 	</section>
 
-	{% include section__about.html divider=true %}
+	<!-- {% include section__about.html divider=true %} -->
 </div>
