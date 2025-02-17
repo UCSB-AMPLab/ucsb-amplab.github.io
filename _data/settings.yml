@@ -92,7 +92,7 @@ font_settings:
     letter_spacing: 0
   h1:
     size: 64
-    size_small: 42
+    size_small: 36
     weight: 700
     letter_spacing: -1.5
     letter_spacing_small: -1.2
