@@ -34,7 +34,7 @@ Camilla Falanesca is PhD student in the Department of History. Her historical re
 ##### Santiago Muñoz Arbeláez
 *Assistant Professor of History, University of Texas at Austin; Co-founder, Neogranadina*
 
-#### Jeff O'Brien
+##### Jeff O'Brien
 *Curator, Material / Image Research Lab (MIRL), Department of History of Art and Architecture, UCSB*
 
 #### Graduate Students
