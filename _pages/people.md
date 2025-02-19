@@ -18,14 +18,24 @@ Juan Cobo Betancourt is a historian of colonial Latin America and a scholar and 
 Camilla Falanesca is PhD student in the Department of History. Her historical research explores the intersection of political economy and memory studies, with a regional focus on Tunisia and Algeria between the 19th and 20th centuries. Her digital humanities work focuses on archival preservation and community-engaged work in Latin America, and especially Colombia. She is also a member of [Neogranadina](https://neogranadina.org/en). [Learn more](https://www.history.ucsb.edu/graduate-student/camillafalanesca/).
 
 #### Researchers and collaborators
+
+##### Adelaida Ávila
+*UX/UI, web design/development, and digital communication specialist, Neogranadina*
+
+##### Alicia Boswell
+*Assistant Professor, Department of History of Art and Architecture, UCSB*
+
+##### María Lumbreras
+*Assistant Professor, Department of History of Art and Architecture, UCSB*
+
 ##### Jairo Melo Flórez
 *Digital Humanities Research Facilitator, UCSB Library*
 
 ##### Santiago Muñoz Arbeláez
 *Assistant Professor of History, University of Texas at Austin; Co-founder, Neogranadina*
 
-##### Adelaida Ávila
-*UX/UI, web design/development, and digital communication specialist, Neogranadina*
+##### Jeff O'Brien
+*Curator, Material / Image Research Lab (MIRL), Department of History of Art and Architecture, UCSB*
 
 #### Graduate Students
 ##### Lee Leal-Ramírez
