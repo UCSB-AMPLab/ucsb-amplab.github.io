@@ -7,6 +7,7 @@ leadership:
   - Santiago Muñoz Arbeláez, History, UT Austin
   - María Lumbreras, History of Art and Architecture, UCSB
   - Jairo Melo, Digital Humanities Research Facilitator, UCSB Library
+  - Jeff O'Brien, Material/Image Research Lab (MIRL), History of Art and Architecture, UCSB
   - Camilla Falanesca, History, UCSB
   - María del Pilar Ramírez Restrepo, History, UCSB
   - Adelaida Ávila, Neogranadina
