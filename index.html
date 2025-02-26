@@ -28,7 +28,7 @@ featured_image: /images/social.jpg
 	</section>
 	<section class="listing">
 		<div class="wrap">
-			{% for project in site.projects reversed %}
+			{% for project in site.projects %}
 
 			{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
 
