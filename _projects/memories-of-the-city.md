@@ -5,7 +5,7 @@ leadership:
   - Juan Cobo Betancourt
   - Pilar Ramírez Restrepo
   - Camilla Falanesca
-date: 2025-01-02 00:00:00
+date: 2025-01-01 00:00:00
 description: As part of this work, we are digitizing an archive of photographs of everyday life in the tugurios of Medellín, Colombia, taken in 1976 by Anne Tuzman and Glenn McNatt and preserved by Anne Fischel.
 featured_image: memories-of-the-city.jpeg
 accent_color: '#A5469A'

@@ -3,7 +3,7 @@ title: Collaborative cataloging
 subtitle: "Help us catalogue historical materials from Latin America"
 leadership: 
   - Juan Cobo Betancourt
-date: 2025-01-02 00:00:00
+date: 2025-01-20 00:00:00
 description: Learn how to read 16th and 17th-century manuscripts from Tunja, Colombia, and help us make them available to researchers, students, and the public.
 featured_image: catalogacion-2x3.jpg
 accent_color: '#A5469A'
