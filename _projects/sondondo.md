@@ -10,7 +10,7 @@ leadership:
   - Jairo Melo, UCSB Library
   - Juan Cobo Betancourt, UCSB
 date: 2025-01-15 00:00:00
-description: "How can we make digital archives of historical documents useful to the communities reflected in them? (Photographs by the French Institute of Andean Studies and Evelyne Mesclier.)"
+description: "How can we make digital archives of historical documents useful to the communities reflected in them? (Photographs by the French Institute of Andean Studies and Evelyne Mesclier)"
 featured_image: sondondo-book.jpg
 accent_color: '#A5469A'
 gallery_images:
