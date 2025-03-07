@@ -10,7 +10,7 @@ featured_image: /images/social.jpg
 ##### Juan Cobo Betancourt
 ***PI***
 
-Juan Cobo Betancourt is a historian of colonial Latin America and a scholar and practitioner of digital humanities and digital public history. He is associate professor of History at UCSB, where he serves director of the [Latin American and Iberian Studies Program](https://lais.ucsb.edu) and [Center for Latin American and Iberian Research](https://clair.ucsb.edu). He is also co-founder of the Colombian non-profit [Neogranadina](https://neogranadina.org). [Learn more](https://www.history.ucsb.edu/faculty/juan-cobo/).
+Juan Cobo Betancourt is a historian of colonial Latin America and a scholar and practitioner of digital humanities and digital public history. He is [associate professor of History](https://www.history.ucsb.edu/faculty/juan-cobo/) at UCSB, where he serves director of the [Latin American and Iberian Studies Program](https://lais.ucsb.edu) and [Center for Latin American and Iberian Research](https://clair.ucsb.edu). He is also co-founder of the Colombian non-profit [Neogranadina](https://neogranadina.org). [Learn more](https://www.history.ucsb.edu/faculty/juan-cobo/).
 
 ##### Camilla Falanesca
 ***AMPL lab manager***
