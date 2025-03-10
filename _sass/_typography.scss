@@ -176,12 +176,12 @@ ol {
 }
 
 blockquote {
-  margin-top: 16px;
-  border-left: 2px solid $text-dark-color;
-  padding: 10px 0 10px 32px;
+  margin-top: 0px;
+  border-left: 0px solid $text-dark-color;
+  padding: 0px 0 00px 32px;
 
   p {
-    font-family: $title-font;
+    font-family: $title_font;
     font-size: $blockquote-small;
     font-weight: $blockquote-weight;
     letter-spacing: $blockquote-spacing;
