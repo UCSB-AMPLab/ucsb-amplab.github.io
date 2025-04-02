@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: HIST 207A Syllabus
 subtitle: 
 description:
