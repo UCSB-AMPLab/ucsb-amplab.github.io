@@ -6,15 +6,15 @@ description:
 ---
 ## HIST 207A. Research Seminar in Digital History
 
-Spring 2025
+##### Spring 2025
 
-Prof. Juan Cobo, jcobo@ucsb.edu
+##### Prof. Juan Cobo, jcobo@ucsb.edu
 
-Updated 2025-04-01
+##### Updated 2025-04-01
 
-**Classes:** HSSB 4020, Wednesdays, 1-4 pm.
+##### **Classes:** HSSB 4020, Wednesdays, 1-4 pm.
 
-**Office hours:** GIRV 2313, Tuesdays, 11-1 pm; or by making an appointment.
+##### **Office hours:** GIRV 2313, Tuesdays, 11-1 pm; or by making an appointment.
 
 ### Overview
 This is a two-quarter research seminar that will introduce you to some of the basics of digital history — the use of digital media to pursue historical work, whether in research, analysis, or dissemination. Its purpose is to equip you with some of the skills, tools, and knowledge necessary to pursue work of this kind, serving as a practical complement to existing courses on historical methodology, historiography, and writing. We will be learning by experimenting, making, and doing.
