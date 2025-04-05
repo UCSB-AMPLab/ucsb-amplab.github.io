@@ -256,3 +256,13 @@ code {
   background: $accent-color;
   color: $background-color;
 }
+
+td a {
+  border-bottom: 1px;
+  border-bottom-style: dotted;
+  
+  &:hover {
+    text-decoration-color: #a5469a;
+  }
+}
+
