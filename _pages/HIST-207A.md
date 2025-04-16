@@ -5,6 +5,7 @@ subtitle:
 description:
 ---
 ## HIST 207A. Research Seminar in Digital History
+[Download this syllabus in Markdown](https://ampl.clair.ucsb.edu/HIST-207A.md.zip)
 
 ##### Spring 2025
 
