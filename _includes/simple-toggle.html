@@ -1,26 +1,30 @@
 {% comment %}
-  Toggle Component
+  Simple Toggle Component
   
   Usage:
-  {% include component__toggle.html 
+  {% capture toggle_content %}
+  Your markdown content here with **formatting** and [links](url).
+  {% endcapture %}
+  {% include simple-toggle.html 
     id="unique-id"
     button_text="Show more"
     expanded_text="Show less"
-    content="Your expandable content here" %}
+    content=toggle_content %}
   
-  Parameters:
-  - id: Unique identifier for the toggle (required)
-  - button_text: Text for the collapsed state (default: "Show more")
-  - expanded_text: Text for the expanded state (default: "Show less")
-  - content: The content to be toggled (required)
+  Or with defaults:
+  {% capture toggle_content %}
+  Your content here
+  {% endcapture %}
+  {% include simple-toggle.html id="my-id" content=toggle_content %}
 {% endcomment %}
 
 {% assign button_text = include.button_text | default: "Show more" %}
 {% assign expanded_text = include.expanded_text | default: "Show less" %}
+{% assign processed_content = include.content | markdownify %}
 
 <div class="toggle-component" data-toggle-id="{{ include.id }}">
   <div class="toggle-content" id="toggle-content-{{ include.id }}">
-    {{ include.content }}
+    {{ processed_content }}
   </div>
   <button class="toggle-button" 
           data-toggle-target="{{ include.id }}"
