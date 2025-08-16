@@ -14,11 +14,10 @@ featured_image: /images/social.jpg
 
 Juan Cobo Betancourt is a historian of colonial Latin America and a scholar and practitioner of digital humanities and digital public history. He is [associate professor of History](https://www.history.ucsb.edu/faculty/juan-cobo/) at UCSB, where he serves director of the [Latin American and Iberian Studies Program](https://lais.ucsb.edu) and [Center for Latin American and Iberian Research](https://clair.ucsb.edu). He is also co-founder of the Colombian non-profit [Neogranadina](https://neogranadina.org). [Learn more](https://www.history.ucsb.edu/faculty/juan-cobo/).
 
-##### Camilla Falanesca
+##### Eduardo Castro
+***Lab manager***
 
-***AMPL lab manager***
-
-Camilla Falanesca is a PhD student in the Department of History at UCSB. Her historical research explores the intersection of political economy and memory studies, with a regional focus on Tunisia and Algeria between the 19th and 20th centuries. Her digital humanities work focuses on archival preservation and community-engaged work in Latin America, and especially Colombia. She is also a member of [Neogranadina](https://neogranadina.org/en). [Learn more](https://www.history.ucsb.edu/graduate-student/camillafalanesca/).
+Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 #### Researchers and collaborators
 
@@ -48,17 +47,25 @@ Camilla Falanesca is a PhD student in the Department of History at UCSB. Her his
 
 #### Graduate Students
 
-##### Eduardo Castro
+##### Camilla Falanesca
 
 *PhD student, Department of History, UCSB*
+{% capture camilla_bio %}
+Camilla Falanesca is a PhD student in the Department of History at UCSB. Her historical research explores the intersection of political economy and memory studies, with a regional focus on Tunisia and Algeria between the 19th and 20th centuries. Her digital humanities work focuses on archival preservation and community-engaged work in Latin America, and especially Colombia. She is also a member of [Neogranadina](https://neogranadina.org/en). [Learn more](https://www.history.ucsb.edu/graduate-student/camillafalanesca/).
+{% endcapture %}
+{% include simple-toggle.html
+  id="camilla-bio"
+  button_text="View bio"
+  expanded_text="Hide details"
+  content=camilla_bio %}
 
 ##### Lee Leal-Ramírez
 
-*Research Assistant, Santa Bárbara Mission Archive-Library*
+*MA student, Latin American and Iberian Studies Program, UCSB*
 
 ##### Liz Marchante
 
-*MA student, Latin American and Iberian Studies Program, UCSB*
+*PhD student, Department of History, UCSB*
 
 ##### Pilar Ramírez Restrepo
 
@@ -66,25 +73,34 @@ Camilla Falanesca is a PhD student in the Department of History at UCSB. Her his
 
 #### Undergraduate Students
 
-##### Olympia Marino
+##### Benjamin Ancho
 
-*Research Assistant, Memories of the City Project, Winter 2025-*
+*Research Assistant, People of Sondondo Project, Spring 2025-*
+
+##### Saketh Ayinaparthi
+
+*Research Assistant, People of Sondondo Project, Spring 2025-*
+
 
 ##### Jennifer Ortiz
 
 *Research Assistant, Collaborative Cataloging Project, Fall 2024, Spring 2025-*
 
-##### Piya Rao
-
-*Research Assistant, Memories of the City Project, Winter 2025-*
-
 ##### Noemi Ung
+
+*Research Assistant, Collaborative Cataloging Project, Fall 2024-*
+
+##### Maggie O'Sullivan
 
 *Research Assistant, Collaborative Cataloging Project, Fall 2024-*
 
 ##### Roland Vásquez
 
 *Research Assistant, Collaborative Cataloging Project, Winter 2024-*
+
+##### Dongchi Xue
+
+*Research Assistant, People of Sondondo Project, Spring 2025-*
 
 ### Alumni
 
@@ -98,13 +114,17 @@ Camilla Falanesca is a PhD student in the Department of History at UCSB. Her his
 
 *Research Assistant, Memories of the City Project, Spring 2025*
 
+##### Olympia Marino
+
+*Research Assistant, Memories of the City Project, Winter-Spring 2025*
+
 ##### Kepa Neesen
 
 *Research Assistant, Memories of the City Project, Winter-Spring 2025*
 
-##### Maggie O'Sullivan
+##### Piya Rao
 
-*Research Assistant, Collaborative Cataloging Project, Fall 2024-Spring 2025*
+*Research Assistant, Memories of the City Project, Winter 2025-Spring 2025*
 
 ##### Nicolás Sama
 
