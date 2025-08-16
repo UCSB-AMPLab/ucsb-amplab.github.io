@@ -2,3 +2,5 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .DS_Store
+GITHUB_ACTIONS_SETUP.md
+TOGGLE_USAGE.md
