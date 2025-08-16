@@ -1,0 +1,115 @@
+// - - - - - - - - - - - - - - - - - -
+
+// Toggle Component
+
+// - - - - - - - - - - - - - - - - - -
+
+.toggle-component {
+  margin: 1.5rem 0;
+  
+  .toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    
+    // Match exact paragraph typography using SCSS variables
+    font-family: $body-font;
+    font-weight: $p-weight;
+    font-size: $p-size-small;
+    line-height: $p-lineheight;
+    letter-spacing: $p-spacing;
+    color: $text-dark-color;
+    
+    // Responsive font size to match paragraphs
+    @include mq(tabletp) {
+      font-size: $p-size;
+    }
+    
+    // Ensure links within toggle content get proper paragraph link styling
+    a {
+      border-bottom: dotted;
+      border-color: $text-light-color;
+      border-width: 2px;
+      font-weight: 500;
+      color: $text-dark-color;
+      text-decoration: none;
+      transition: all 120ms ease-in-out;
+      
+      &:hover {
+        color: $accent-color;
+        border-color: $accent-color;
+      }
+    }
+    
+    &.expanded {
+      max-height: 1000px; // Adjust based on your content needs
+    }
+  }
+  
+    .toggle-button {
+    // Style exactly like body links (p a) with matching typography
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: none;
+    color: $text-dark-color;
+    border-bottom: dotted;
+    border-color: $text-light-color;
+    border-width: 2px;
+    font-weight: 500;
+    font-family: $body-font;
+    
+    // Match paragraph typography exactly
+    font-size: $p-size-small;
+    line-height: $p-lineheight;
+    letter-spacing: $p-spacing;
+    
+    margin-top: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 120ms ease-in-out;
+
+    // Responsive font size to match paragraphs
+    @include mq(tabletp) {
+      font-size: $p-size;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-left: 6px solid currentColor;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    &.expanded::after {
+      transform: rotate(90deg);
+    }
+
+    &:hover {
+      color: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+  
+  // Animation for content appearance
+  .toggle-content.expanded {
+    animation: fadeInUp 0.4s ease-out;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

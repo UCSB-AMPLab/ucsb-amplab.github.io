@@ -416,6 +416,32 @@
 
 
 
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Toggle Component
+
+	// Handle toggle button clicks
+	$(document).on('click', '.toggle-button', function (e) {
+		e.preventDefault();
+		
+		var $button = $(this);
+		var targetId = $button.data('toggle-target');
+		var $content = $('#toggle-content-' + targetId);
+		var isExpanded = $content.hasClass('expanded');
+		
+		if (isExpanded) {
+			// Collapse
+			$content.removeClass('expanded');
+			$button.removeClass('expanded');
+			$button.text($button.data('collapsed-text') || 'Show more');
+			$button.attr('aria-expanded', 'false');
+		} else {
+			// Expand
+			$content.addClass('expanded');
+			$button.addClass('expanded');
+			$button.text($button.data('expanded-text') || 'Show less');
+			$button.attr('aria-expanded', 'true');
+		}
+	});
+
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Contact Form
 
 	// Override the submit event

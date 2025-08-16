@@ -1,0 +1,33 @@
+{% comment %}
+  Toggle Component
+  
+  Usage:
+  {% include component__toggle.html 
+    id="unique-id"
+    button_text="Show more"
+    expanded_text="Show less"
+    content="Your expandable content here" %}
+  
+  Parameters:
+  - id: Unique identifier for the toggle (required)
+  - button_text: Text for the collapsed state (default: "Show more")
+  - expanded_text: Text for the expanded state (default: "Show less")
+  - content: The content to be toggled (required)
+{% endcomment %}
+
+{% assign button_text = include.button_text | default: "Show more" %}
+{% assign expanded_text = include.expanded_text | default: "Show less" %}
+
+<div class="toggle-component" data-toggle-id="{{ include.id }}">
+  <div class="toggle-content" id="toggle-content-{{ include.id }}">
+    {{ include.content }}
+  </div>
+  <button class="toggle-button" 
+          data-toggle-target="{{ include.id }}"
+          data-collapsed-text="{{ button_text }}"
+          data-expanded-text="{{ expanded_text }}"
+          aria-expanded="false"
+          aria-controls="toggle-content-{{ include.id }}">
+    {{ button_text }}
+  </button>
+</div>
