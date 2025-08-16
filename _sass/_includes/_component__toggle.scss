@@ -4,13 +4,12 @@
 
 // - - - - - - - - - - - - - - - - - -
 
-.toggle-component {
-  margin: 1.5rem 0;
-  
+.toggle-component { 
   .toggle-content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
+    margin-left: 1rem;
     
     // Match exact paragraph typography using SCSS variables
     font-family: $body-font;
@@ -33,7 +32,7 @@
       font-weight: 500;
       color: $text-dark-color;
       text-decoration: none;
-      transition: all 120ms ease-in-out;
+      transition: all 240ms ease-in-out;
       
       &:hover {
         color: $accent-color;
@@ -63,8 +62,6 @@
     font-size: $p-size-small;
     line-height: $p-lineheight;
     letter-spacing: $p-spacing;
-    
-    margin-top: 0.5rem;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
@@ -88,7 +85,7 @@
     }
 
     &.expanded::after {
-      transform: rotate(90deg);
+      transform: rotate(270deg);
     }
 
     &:hover {
