@@ -28,28 +28,61 @@ featured_image: /images/social.jpg
 	</section>
 	<section class="listing">
 		<div class="wrap">
-			{% for project in site.projects %}
+			<h1 style="margin-bottom: 3rem;">Current projects</h1>
+			{% for project in site.projects reversed %}
+				{% if project.status != "completed" %}
+					{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
 
-			{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
+					<article class="project__preview">
+						<h2 class="project__title"><a href="{{ project.url | relative_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h2>
 
-			<article class="project__preview">
-				<h2 class="project__title"><a href="{{ project.url | relative_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h2>
+						<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
+							{% for image in project.gallery_images %}
+							<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="" class="project__image"></a>
+							{% endfor %}
+						</div>
 
-				<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
-					{% for image in project.gallery_images %}
-					<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="" class="project__image"></a>
-					{% endfor %}
-				</div>
+						<div class="project__content grid" style="border-color: {{ accent_color }}">
+							<p class="project__subtitle subtitle--light">{{ project.subtitle }}</p>
+							<p class="project__description --small">
+								{{ project.description }}
+								<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
+									style="color: {{ accent_color }}; --color-var: {{ accent_color }}; border-bottom: none; font-family: 'Silkscreen', serif; font-size: 110%">More details</a>
+							</p>
+						</div>
+					</article>
+				{% endif %}
 
-				<div class="project__content grid" style="border-color: {{ accent_color }}">
-					<p class="project__subtitle subtitle--light">{{ project.subtitle }}</p>
-					<p class="project__description --small">
-						{{ project.description }}
-						<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
-							style="color: {{ accent_color }}; --color-var: {{ accent_color }}; border-bottom: none; font-family: 'Silkscreen', serif; font-size: 110%">More details</a>
-					</p>
-				</div>
-			</article>
+			{% endfor %}
+		</div>
+	</section>
+
+	<section class="listing">
+		<div class="wrap">
+		<h1 style="margin-bottom: 3rem;">Completed Projects</h1>
+			{% for project in site.projects reversed %}
+				{% if project.status == "completed" %}
+					{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
+
+					<article class="project__preview">
+						<h2 class="project__title"><a href="{{ project.url | relative_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h2>
+
+						<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
+							{% for image in project.gallery_images %}
+							<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="" class="project__image"></a>
+							{% endfor %}
+						</div>
+
+						<div class="project__content grid" style="border-color: {{ accent_color }}">
+							<p class="project__subtitle subtitle--light">{{ project.subtitle }}</p>
+							<p class="project__description --small">
+								{{ project.description }}
+								<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
+									style="color: {{ accent_color }}; --color-var: {{ accent_color }}; border-bottom: none; font-family: 'Silkscreen', serif; font-size: 110%">More details</a>
+							</p>
+						</div>
+					</article>
+				{% endif %}
 
 			{% endfor %}
 		</div>
