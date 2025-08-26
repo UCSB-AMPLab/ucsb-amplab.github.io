@@ -11,7 +11,7 @@ leadership:
   - Camilla Falanesca, History, UCSB
   - María del Pilar Ramírez Restrepo, History, UCSB
   - Adelaida Ávila, Neogranadina
-date: 2025-01-01 00:00:00
+date: 2025-08-01 00:00:00
 description: A prototype platform and methodology that will allow scholars to present expert narratives aimed at different audiences through the display of born-digital or digitized objects, whether historical manuscripts, images, video or audio recordings, or 3D visualizations.
 featured_image: weaving-histories-mockup.jpg
 accent_color: '#A5469A'

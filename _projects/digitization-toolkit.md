@@ -5,7 +5,7 @@ leadership:
   - NEH Award HAA-304052-25
   - Juan Cobo Betancourt, UCSB (PI/Project Director)
   - Santiago Muñoz Arbeláez, UT Austin (Project Co-Director)
-date: 2025-01-03 00:00:00
+date: 2025-08-03 00:00:00
 description: "What happens when communities have the means to digitize and administer their own historical documentation? What if more people can decide what constitutes an archive: what is worth collecting, preserving, and sharing, and on what terms? How might this affect how visions and narratives of the past are written and taught in different contexts?"
 featured_image: digitization_toolkit.jpeg
 accent_color: '#A5469A'

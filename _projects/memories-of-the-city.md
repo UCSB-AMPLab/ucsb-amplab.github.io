@@ -6,7 +6,8 @@ leadership:
   - Pilar Ramírez Restrepo
   - Camilla Falanesca
 date: 2025-01-01 00:00:00
-description: As part of this work, we are digitizing an archive of photographs of everyday life in the tugurios of Medellín, Colombia, taken in 1976 by Anne Tuzman and Glenn McNatt and preserved by Anne Fischel.
+status: completed
+description: As part of this work, UCSB undergrads digitized an archive of photographs of everyday life in the tugurios of Medellín, Colombia, taken in 1976 by Anne Tuzman and Glenn McNatt and preserved by Anne Fischel.
 featured_image: lab-placeholder.jpeg
 accent_color: '#A5469A'
 gallery_images:
