@@ -29,6 +29,10 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 *Assistant Professor, Department of History of Art and Architecture, UCSB*
 
+##### Natalie Cobo
+
+*Affilate Researcher, Max Planck Institute for Legal History and Legal Theory*
+
 ##### María Lumbreras
 
 *Assistant Professor, Department of History of Art and Architecture, UCSB*
