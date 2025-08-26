@@ -1,6 +1,6 @@
 ---
 title: Memories of the City
-subtitle: "A bilingual (English/Spanish) virtual exhibition that explores memory, urban migration, and political struggles in Medellín, Colombia, on the basis of two archives."
+subtitle: "A project to digitize and preserve two archives documenting urban migration and political struggles in Medellín, Colombia."
 leadership: 
   - Juan Cobo Betancourt
   - Pilar Ramírez Restrepo
