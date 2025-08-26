@@ -13,10 +13,10 @@ leadership:
   - Adelaida Ávila, Neogranadina
 date: 2025-01-01 00:00:00
 description: A prototype platform and methodology that will allow scholars to present expert narratives aimed at different audiences through the display of born-digital or digitized objects, whether historical manuscripts, images, video or audio recordings, or 3D visualizations.
-featured_image: lab-placeholder.jpeg
+featured_image: weaving-histories-mockup.jpg
 accent_color: '#A5469A'
 gallery_images:
-  - lab-placeholder.jpeg
+  - weaving-histories-mockup.jpg
 ---
 
 In 2020, Santiago Muñoz (PI) developed [***Colonial Landscapes*** (*Paisajes coloniales*)](https://colonial-landscapes.com), an interactive, bilingual pedagogical platform that explores the history of the region around Bogotá in the highlands of what is now Colombia through a 1614 map. The platform is intended for a non-academic audience, particularly of Colombian middle, high school, and undergraduate students, as an innovative way of exploring the changes undergone by the Indigenous Muisca peoples who inhabited this region, and the landscape itself, as a result of European colonization. In four short chapters, the platform guides readers through the map, highlighting relevant sections, and using specific details in the image as launching points for explanation and analysis. 
@@ -34,5 +34,5 @@ The website is built as a simple, serverless, static website, which has ensured 
 
 We are now drawing on this experience by turning the code base, design language, narrative form, and pedagogical structure of *Colonial landscapes* into a replicable open-source framework that will allow others to generate their own public-facing digital narratives on the basis of digitized or born-digital objects, whether 2D scans like the 1614 map at the heart of *Colonial landscapes* or 3D models of ancient and historic artifacts. 
 
-In order to develop, test, and assess the prototype, we are develop two collaborative public-facing projects with UCSB students that use different kinds of sources. One of these is [***Memories of the City***, which you can read about here.](/project/memories-of-the-city)
+In order to develop, test, and assess the prototype, we are develop two collaborative public-facing projects with UCSB students that use different kinds of sources.
 
