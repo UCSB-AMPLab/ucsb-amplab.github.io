@@ -32,6 +32,14 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 ##### Natalie Cobo
 
 *Affilate Researcher, Max Planck Institute for Legal History and Legal Theory*
+{% capture natalie_bio %}
+Natalie Cobo is an historian of the early modern Iberian world with a special focus on the 16th-century Philippines, and questions of legal history, colonalism, and the transmission of political ideas in early modern Latin texts. She is an affiliate researcher at the [Max Planck Institute for Legal History and Legal Theory](https://www.lhlt.mpg.de/4620677/cobo-natalie) and co-founder of the Colombian non-profit [Neogranadina](https://neogranadina.org/en).
+{% endcapture %}
+{% include simple-toggle.html
+  id="natalie-bio"
+  button_text="View bio"
+  expanded_text="Hide details"
+  content=natalie_bio %}
 
 ##### María Lumbreras
 
