@@ -27,19 +27,19 @@ Readings and preparatory work for class meetings are listed by the sessions by w
 | Week | Date      | Focus          | Format     | In-class activity       | Assignments (by Friday) class |
 | ---- | --------- | -------------- | ---------- | ----------------------- | ----------------------------- |
 | 1    | 9/30      | Introductions  | Class      | Presentations           |                               |
-| 2    | 10/7      | New directions | One-on-one |                         | Detailed writing plan         |
-| 3    | 10/14     |                |            |                         |                               |
-| 4    | 10/21     |                |            |                         |                               |
-| 5    | 10/28     |                |            |                         | First drafts                  |
-| 6    | 11/4      | Peer-review    | Class      |                         |                               |
-| 7    | **11/11** |                |            |                         |                               |
-| 8    | **11/18** |                |            |                         | Everyone: second drafts       |
+| 2    | 10/7      | New directions | One-on-one |                         | Detailed plan for this quarter|
+| 3    | 10/14     |                | TBD        |                         |                               |
+| 4    | 10/21     |                | TBD        |                         |                               |
+| 5    | 10/28     | Presentations  | Class      | Presentations, feedback | Sharing first versions        |
+| 6    | 11/4      | Presentations  | Class      | Presentations, feedback |                               |
+| 7    | **11/11** |                | TBD        |                         |                               |
+| 8    | **11/18** |                | TBD        |                         | Sharing second versions       |
 | 9    | 11/25     | Presentations  | Class      | Presentations, feedback |                               |
 | 10   | 12/2      | Presentations  | Class      | Presentations, feedback |                               |
 
 ### Assignments and assessment
 
-You don't get a grade in this course until the end of 207B, but I'll broadly be looking at the following four areas:
+Your grade at the end of this course will be a reflection of the work you put into your project this quarter and the last, and your participation in the group project last quarter. While the end result will be important, remember I am more interested in process — and the lessons learned along the way — than in outcomes. I'll broadly be looking at the following four areas:
 
 ##### 1. Weekly progress log and documentation
 
@@ -53,13 +53,9 @@ You are all experts in your own work and the fields in which it intervenes. A bi
 
 Please come to every session and be prepared to participate and do the work. This means coming to our meetings having done the reading and any preparatory work. If something comes up **please don't suffer in silence**. I'm here to help.
 
-##### 3. The group project
+##### 3. Your final project
 
-This should be a fun collaborative project. Make sure to split the work equitably. I'm excited to see what you do.
-
-##### 4. The prospectus and proof of concept
-
-Don't worry, this is a lot less complicated that it seems and I will give you plenty of information as we go along. Don't stress.
+You set the expectations, timeline, and deliverables (in consultation with me), and we all help hold each other accountable. I'm excited to see what you do.
 
 ### Academic Integrity
 
