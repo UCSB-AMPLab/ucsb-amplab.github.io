@@ -1,3 +1,10 @@
+---
+layout: page
+title: HIST 207B Syllabus
+subtitle: 
+description:
+---
+
 ## HIST 207B. Research Seminar in Digital History
 
 ##### Fall 2025
