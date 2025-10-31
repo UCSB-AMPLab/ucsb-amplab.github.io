@@ -38,7 +38,7 @@ Readings and preparatory work for class meetings are listed by the sessions by w
 | 3    | 10/14     |                 | Zoom co-working & one-on-one meetings |                         |                               |
 | 4    | 10/21     |                 | Optional demo session in Telar tool (11 am)                                   |                         |                               |
 | 5    | 10/28     | Presentations   | Class                                 | Presentations, feedback | Sharing first versions        |
-| 6    | 11/4      | Presentations?  | Class - if we need more time          | Presentations, feedback |                               |
+| 6    | 11/4      |   | One-on-one consultations available          | Presentations, feedback |                               |
 | 7    | **11/11** |                 | TBD                                   |                         |                               |
 | 8    | **11/18** |                 | TBD                                   |                         | Sharing second versions       |
 | 9    | 11/25     | Presentations   | Class                                 | Presentations, feedback |                               |
