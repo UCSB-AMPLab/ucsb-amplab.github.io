@@ -40,8 +40,8 @@ Readings and preparatory work for class meetings are listed by the sessions by w
 | 5    | 10/28     | Presentations   | Class                                 | Presentations, feedback | Sharing first versions        |
 | 6    | 11/4      |                 | One-on-one consultations available    | Presentations, feedback |                               |
 | 7    | 11/11     |                 | Memorial day (no class)               |                         |                               |
-| 8    | 11/18     |                 | Zoom co-working & one-on-one meetings |                         | Sharing second versions       |
-| 9    | 11/25     | Presentations   | Class                                 | Presentations, feedback |                               |
+| 8    | 11/18     | Presentations   | Class: in-person check-in             |                         | Sharing second versions       |
+| 9    | 11/25     |                 | TBD                                   | Presentations, feedback |                               |
 | 10   | 12/2      | Presentations   | Class                                 | Presentations, feedback |                               |
 
 ### Assignments and assessment
