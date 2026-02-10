@@ -54,14 +54,6 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 ##### Camilla Falanesca
 
 *PhD student, Department of History, UCSB*
-{% capture camilla_bio %}
-Camilla Falanesca is a PhD student in the Department of History at UCSB. Her historical research explores the intersection of political economy and memory studies, with a regional focus on Tunisia and Algeria between the 19th and 20th centuries. Her digital humanities work focuses on archival preservation and community-engaged work in Latin America, and especially Colombia. She is also a member of [Neogranadina](https://neogranadina.org/en). [Learn more](https://www.history.ucsb.edu/graduate-student/camillafalanesca/).
-{% endcapture %}
-{% include simple-toggle.html
-  id="camilla-bio"
-  button_text="View bio"
-  expanded_text="Hide details"
-  content=camilla_bio %}
 
 ##### Lee Leal-Ramírez
 
