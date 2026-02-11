@@ -17,7 +17,7 @@ featured_image: /images/social.jpg
 
 Even though there are Obsidian apps for iOS devices, it may be best to start on a Mac or PC.
 
-[Download obsidian-template-for-uta2024.zip](https://prod-files-secure.s3.us-west-2.amazonaws.com/fc7ea013-dcd4-4b78-b2e4-2703730f1888/9d0211e8-243d-4983-ae98-5e6635368d33/obsidian-template-for-uta2024.zip)
+[Download obsidian-template-for-219B.zip](/assets/obsidian-template-for-219B.zip)
 
 ## Read and watch some tutorials
 
