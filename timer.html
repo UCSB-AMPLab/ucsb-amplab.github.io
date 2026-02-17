@@ -1,0 +1,818 @@
+---
+layout: default
+title: Countdown Timer
+description: Countdown timer
+featured_image: /images/social.jpg
+---
+
+<style>
+  /* — Timer page variables — */
+  .timer-page {
+    --purple: #A5469A;
+    --purple-dark: #8B467D;
+    --text-dark: #202224;
+    --text-medium: #6C7A89;
+    --text-light: #AEB3BB;
+    --border: #ECEDEF;
+    --error: #D64541;
+    --amber: #C9860B;
+    --timer-color: #202224;
+    --progress-color: #A5469A;
+
+    min-height: calc(100vh - 300px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+  }
+
+  /* — Purple splodges — */
+  .splodges {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .splodge {
+    position: absolute;
+    fill: none;
+    stroke: rgb(165, 70, 154);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* — Screens — */
+  .timer-page .screen {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .timer-page .screen.active {
+    display: flex;
+  }
+
+  /* — Mode toggle — */
+  .mode-toggle {
+    display: flex;
+    gap: 0;
+    margin-bottom: 2rem;
+    border: 2px solid var(--border);
+    border-radius: 40px;
+    overflow: hidden;
+  }
+
+  .mode-toggle-btn {
+    font-family: 'Silkscreen', monospace;
+    font-size: clamp(11px, 1.4vw, 14px);
+    background: transparent;
+    color: var(--text-light);
+    border: none;
+    padding: 10px 24px;
+    cursor: pointer;
+    transition: all 120ms ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .mode-toggle-btn.active {
+    background: var(--purple);
+    color: #fff;
+  }
+
+  .mode-toggle-btn:not(.active):hover {
+    color: var(--text-medium);
+  }
+
+  /* — Setup screen — */
+  .setup-label {
+    font-family: 'Silkscreen', monospace;
+    font-size: clamp(18px, 3vw, 28px);
+    color: var(--text-medium);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .presets {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .preset-btn {
+    font-family: 'Silkscreen', monospace;
+    font-size: clamp(11px, 1.4vw, 14px);
+    background: transparent;
+    color: var(--purple);
+    border: 2px solid var(--purple);
+    padding: 8px 16px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 120ms ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+
+  .preset-btn:hover {
+    background: var(--purple);
+    color: #fff;
+  }
+
+  .preset-btn.selected {
+    background: var(--purple);
+    color: #fff;
+  }
+
+  /* — Duration custom input — */
+  .custom-input-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2.5rem;
+  }
+
+  .custom-input-row label,
+  .finish-row label {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    color: var(--text-medium);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+  }
+
+  .custom-input {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+    width: 80px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid var(--border);
+    padding: 8px 0;
+    color: var(--text-dark);
+    background: transparent;
+    outline: none;
+    transition: border-color 120ms;
+  }
+
+  .custom-input:focus {
+    border-bottom-color: var(--purple);
+  }
+
+  .custom-sep {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+    color: var(--text-light);
+  }
+
+  /* — Finish-at input — */
+  .finish-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2.5rem;
+  }
+
+  .finish-time-input {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 24px;
+    border: none;
+    border-bottom: 2px solid var(--border);
+    padding: 8px 4px;
+    color: var(--text-dark);
+    background: transparent;
+    outline: none;
+    transition: border-color 120ms;
+    cursor: pointer;
+  }
+
+  .finish-time-input:focus {
+    border-bottom-color: var(--purple);
+  }
+
+  .finish-preview {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    min-height: 20px;
+  }
+
+  /* — Duration/Finish panels — */
+  .setup-panel {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .setup-panel.active {
+    display: flex;
+  }
+
+  /* — Start button — */
+  .start-btn {
+    font-family: 'Silkscreen', monospace;
+    font-size: clamp(14px, 2vw, 16px);
+    background: var(--purple);
+    color: #fff;
+    border: none;
+    padding: 14px 48px;
+    border-radius: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 120ms ease-in-out;
+  }
+
+  .start-btn:hover {
+    filter: brightness(0.9);
+  }
+
+  .start-btn:active {
+    transform: scale(0.97);
+  }
+
+  .start-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  /* — Timer screen — */
+  .timer-screen {
+    gap: 0;
+    user-select: none;
+  }
+
+  .timer-display {
+    font-family: 'Silkscreen', monospace;
+    font-size: clamp(80px, 20vw, 260px);
+    line-height: 1;
+    color: var(--timer-color);
+    transition: color 800ms ease;
+    text-align: center;
+    padding: 0 20px;
+    letter-spacing: -0.02em;
+  }
+
+  /* — Progress bar — */
+  .progress-container {
+    width: 80%;
+    max-width: 700px;
+    margin-top: clamp(20px, 4vh, 48px);
+    position: relative;
+  }
+
+  .progress-track {
+    width: 100%;
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    width: 0%;
+    background: var(--progress-color);
+    border-radius: 3px;
+    transition: width 1s linear, background-color 800ms ease;
+  }
+
+  .progress-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: clamp(11px, 1.4vw, 14px);
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+  }
+
+  /* — Controls — */
+  .controls {
+    display: flex;
+    gap: 12px;
+    margin-top: clamp(20px, 4vh, 40px);
+  }
+
+  .ctrl-btn {
+    font-family: 'Silkscreen', monospace;
+    font-size: clamp(11px, 1.4vw, 14px);
+    background: transparent;
+    color: var(--text-medium);
+    border: 2px solid var(--border);
+    padding: 10px 28px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 120ms ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .ctrl-btn:hover {
+    border-color: var(--text-medium);
+    color: var(--text-dark);
+  }
+
+  .ctrl-btn.primary {
+    border-color: var(--purple);
+    color: var(--purple);
+  }
+
+  .ctrl-btn.primary:hover {
+    background: var(--purple);
+    color: #fff;
+  }
+
+  /* — Current time — */
+  .current-time {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: clamp(14px, 1.8vw, 20px);
+    color: var(--text-light);
+    letter-spacing: 0.5px;
+    margin-top: clamp(16px, 3vh, 32px);
+    text-align: center;
+  }
+
+  .current-time-label {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-right: 8px;
+    font-weight: 700;
+  }
+
+  /* — Times up screen — */
+  .timesup-screen {
+    gap: 16px;
+  }
+
+  .timesup-text {
+    font-family: 'Silkscreen', monospace;
+    font-size: clamp(48px, 12vw, 160px);
+    color: var(--error);
+    text-align: center;
+    line-height: 1.1;
+    animation: pulse-red 2s ease-in-out infinite;
+  }
+
+  .timesup-sub {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: clamp(16px, 2.5vw, 24px);
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .timesup-reset {
+    margin-top: 2rem;
+  }
+
+  @keyframes pulse-red {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  @keyframes pulse-critical {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+  }
+
+  .timer-display.critical {
+    animation: pulse-critical 1s ease-in-out infinite;
+  }
+
+  /* — Paused badge — */
+  .paused-badge {
+    display: none;
+    font-family: 'Silkscreen', monospace;
+    font-size: clamp(12px, 1.6vw, 18px);
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 8px;
+    animation: blink-pause 1.5s step-end infinite;
+  }
+
+  .paused-badge.visible {
+    display: block;
+  }
+
+  @keyframes blink-pause {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+</style>
+
+<!-- Purple splodges background -->
+<div class="splodges">
+  <svg class="splodge" style="top:4%; left:6%; width:40px; height:30px; stroke-opacity:0.24; stroke-width:6px;" viewBox="0 0 30 20"><path d="M5,16C2,12 2,8 5,4"/></svg>
+  <svg class="splodge" style="top:12%; right:15%; width:28px; height:22px; stroke-opacity:0.6; stroke-width:5px;" viewBox="0 0 20 16"><path d="M4,14C2,10 2,6 4,2"/></svg>
+  <svg class="splodge" style="top:35%; left:3%; width:24px; height:20px; stroke-opacity:0.6; stroke-width:4px;" viewBox="0 0 18 16"><path d="M14,2C16,6 14,10 10,14"/></svg>
+  <svg class="splodge" style="bottom:20%; left:10%; width:36px; height:28px; stroke-opacity:0.24; stroke-width:5px;" viewBox="0 0 26 22"><path d="M6,18C2,14 1,10 4,6"/></svg>
+  <svg class="splodge" style="top:8%; right:5%; width:32px; height:24px; stroke-opacity:0.24; stroke-width:6px;" viewBox="0 0 24 18"><path d="M18,4C20,8 18,12 14,16"/></svg>
+  <svg class="splodge" style="bottom:30%; right:6%; width:28px; height:20px; stroke-opacity:0.6; stroke-width:4px;" viewBox="0 0 20 14"><path d="M4,12C2,8 4,4 8,2"/></svg>
+  <svg class="splodge" style="top:55%; right:12%; width:32px; height:26px; stroke-opacity:0.24; stroke-width:5px;" viewBox="0 0 24 20"><path d="M6,16C3,12 3,8 6,4"/></svg>
+  <svg class="splodge" style="bottom:8%; left:25%; width:24px; height:18px; stroke-opacity:0.24; stroke-width:6px;" viewBox="0 0 18 14"><path d="M14,2C16,6 14,10 10,12"/></svg>
+  <svg class="splodge" style="top:70%; left:5%; width:20px; height:16px; stroke-opacity:0.6; stroke-width:4px;" viewBox="0 0 16 14"><path d="M12,2C14,5 12,9 8,12"/></svg>
+  <svg class="splodge" style="bottom:12%; right:20%; width:36px; height:28px; stroke-opacity:0.24; stroke-width:7px;" viewBox="0 0 28 22"><path d="M8,18C4,14 4,8 8,4"/></svg>
+  <svg class="splodge" style="top:25%; left:18%; width:22px; height:18px; stroke-opacity:0.24; stroke-width:4px;" viewBox="0 0 16 14"><path d="M4,12C2,8 4,4 8,2"/></svg>
+  <svg class="splodge" style="top:80%; right:30%; width:26px; height:20px; stroke-opacity:0.6; stroke-width:5px;" viewBox="0 0 20 16"><path d="M4,14C2,10 2,6 4,2"/></svg>
+</div>
+
+<div class="timer-page">
+
+  <!-- SETUP SCREEN -->
+  <div class="screen active" id="setup-screen">
+    <div class="setup-label">Countdown Timer</div>
+
+    <div class="mode-toggle">
+      <button class="mode-toggle-btn active" id="mode-duration-btn">Duration</button>
+      <button class="mode-toggle-btn" id="mode-finish-btn">Finish at</button>
+    </div>
+
+    <!-- Duration mode -->
+    <div class="setup-panel active" id="panel-duration">
+      <div class="presets">
+        <button class="preset-btn" data-minutes="50">50 min</button>
+        <button class="preset-btn" data-minutes="75">1 hr 15</button>
+        <button class="preset-btn" data-minutes="90">1 hr 30</button>
+        <button class="preset-btn" data-minutes="120">2 hr</button>
+        <button class="preset-btn" data-minutes="180">3 hr</button>
+      </div>
+
+      <div class="custom-input-row">
+        <label>Custom</label>
+        <input type="number" class="custom-input" id="custom-hours" min="0" max="9" placeholder="H" aria-label="Hours">
+        <span class="custom-sep">:</span>
+        <input type="number" class="custom-input" id="custom-minutes" min="0" max="59" placeholder="MM" aria-label="Minutes">
+        <span class="custom-sep">:</span>
+        <input type="number" class="custom-input" id="custom-seconds" min="0" max="59" placeholder="SS" aria-label="Seconds">
+      </div>
+    </div>
+
+    <!-- Finish-at mode -->
+    <div class="setup-panel" id="panel-finish">
+      <div class="finish-row">
+        <label>End time</label>
+        <input type="time" class="finish-time-input" id="finish-time-input" aria-label="Finish time">
+      </div>
+      <div class="finish-preview" id="finish-preview"></div>
+    </div>
+
+    <button class="start-btn" id="start-btn" disabled>Start</button>
+  </div>
+
+  <!-- TIMER SCREEN -->
+  <div class="screen timer-screen" id="timer-screen">
+    <div class="timer-display" id="timer-display">
+      <span id="timer-text">0:00:00</span>
+    </div>
+    <div class="paused-badge" id="paused-badge">Paused</div>
+
+    <div class="progress-container">
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <div class="progress-labels">
+        <span id="elapsed-label">0:00 elapsed</span>
+        <span id="total-label"></span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="ctrl-btn primary" id="pause-btn">Pause</button>
+      <button class="ctrl-btn" id="add-btn">+5 min</button>
+      <button class="ctrl-btn" id="reset-btn">Reset</button>
+    </div>
+
+    <div class="current-time">
+      <span class="current-time-label">Current time</span>
+      <span id="clock"></span>
+    </div>
+  </div>
+
+  <!-- TIME'S UP SCREEN -->
+  <div class="screen timesup-screen" id="timesup-screen">
+    <div class="timesup-text">Time's up!</div>
+    <div class="timesup-sub">Please put your pens down</div>
+    <button class="ctrl-btn timesup-reset" id="timesup-reset-btn">New Timer</button>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  // Elements
+  var setupScreen = document.getElementById('setup-screen');
+  var timerScreen = document.getElementById('timer-screen');
+  var timesupScreen = document.getElementById('timesup-screen');
+  var timerDisplay = document.getElementById('timer-display');
+  var timerText = document.getElementById('timer-text');
+  var pausedBadge = document.getElementById('paused-badge');
+  var progressFill = document.getElementById('progress-fill');
+  var elapsedLabel = document.getElementById('elapsed-label');
+  var totalLabel = document.getElementById('total-label');
+  var startBtn = document.getElementById('start-btn');
+  var pauseBtn = document.getElementById('pause-btn');
+  var addBtn = document.getElementById('add-btn');
+  var resetBtn = document.getElementById('reset-btn');
+  var timesupResetBtn = document.getElementById('timesup-reset-btn');
+  var clockEl = document.getElementById('clock');
+  var presetBtns = document.querySelectorAll('.preset-btn');
+  var customHours = document.getElementById('custom-hours');
+  var customMinutes = document.getElementById('custom-minutes');
+  var customSeconds = document.getElementById('custom-seconds');
+  var modeDurationBtn = document.getElementById('mode-duration-btn');
+  var modeFinishBtn = document.getElementById('mode-finish-btn');
+  var panelDuration = document.getElementById('panel-duration');
+  var panelFinish = document.getElementById('panel-finish');
+  var finishTimeInput = document.getElementById('finish-time-input');
+  var finishPreview = document.getElementById('finish-preview');
+  var timerPage = document.querySelector('.timer-page');
+
+  var totalSeconds = 0;
+  var remainingSeconds = 0;
+  var timerInterval = null;
+  var isPaused = false;
+  var selectedPreset = null;
+  var currentMode = 'duration'; // 'duration' or 'finish'
+
+  // Clock
+  function updateClock() {
+    var now = new Date();
+    var h = now.getHours();
+    var m = String(now.getMinutes()).padStart(2, '0');
+    var ampm = h >= 12 ? 'PM' : 'AM';
+    var h12 = h % 12 || 12;
+    clockEl.textContent = h12 + ':' + m + ' ' + ampm;
+  }
+  updateClock();
+  setInterval(updateClock, 1000);
+
+  // Format time
+  function fmt(secs) {
+    var h = Math.floor(secs / 3600);
+    var m = Math.floor((secs % 3600) / 60);
+    var s = secs % 60;
+    if (h > 0) {
+      return h + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+    }
+    return m + ':' + String(s).padStart(2, '0');
+  }
+
+  function fmtShort(secs) {
+    var h = Math.floor(secs / 3600);
+    var m = Math.floor((secs % 3600) / 60);
+    if (h > 0 && m > 0) return h + 'h ' + m + 'm';
+    if (h > 0) return h + 'h';
+    return m + 'm';
+  }
+
+  // Validate start button
+  function validateStart() {
+    if (currentMode === 'duration') {
+      var customTotal = getCustomSeconds();
+      startBtn.disabled = (selectedPreset === null && customTotal === 0);
+    } else {
+      startBtn.disabled = (getFinishSeconds() <= 0);
+    }
+  }
+
+  function getCustomSeconds() {
+    var h = parseInt(customHours.value) || 0;
+    var m = parseInt(customMinutes.value) || 0;
+    var s = parseInt(customSeconds.value) || 0;
+    return h * 3600 + m * 60 + s;
+  }
+
+  function getFinishSeconds() {
+    var val = finishTimeInput.value;
+    if (!val) return 0;
+    var parts = val.split(':');
+    var targetH = parseInt(parts[0]);
+    var targetM = parseInt(parts[1]);
+    var now = new Date();
+    var target = new Date(now);
+    target.setHours(targetH, targetM, 0, 0);
+    // If target is earlier than now, assume next day
+    if (target <= now) {
+      target.setDate(target.getDate() + 1);
+    }
+    return Math.floor((target - now) / 1000);
+  }
+
+  function updateFinishPreview() {
+    var secs = getFinishSeconds();
+    if (secs > 0) {
+      finishPreview.textContent = fmtShort(secs) + ' from now';
+    } else {
+      finishPreview.textContent = '';
+    }
+    validateStart();
+  }
+
+  // Mode toggle
+  modeDurationBtn.addEventListener('click', function () {
+    currentMode = 'duration';
+    modeDurationBtn.classList.add('active');
+    modeFinishBtn.classList.remove('active');
+    panelDuration.classList.add('active');
+    panelFinish.classList.remove('active');
+    validateStart();
+  });
+
+  modeFinishBtn.addEventListener('click', function () {
+    currentMode = 'finish';
+    modeFinishBtn.classList.add('active');
+    modeDurationBtn.classList.remove('active');
+    panelFinish.classList.add('active');
+    panelDuration.classList.remove('active');
+    // Pre-fill with a reasonable default: round up to next :00 or :30
+    if (!finishTimeInput.value) {
+      var now = new Date();
+      var mins = now.getMinutes();
+      var nextSlot = mins < 30 ? 30 : 60;
+      var target = new Date(now);
+      target.setMinutes(nextSlot, 0, 0);
+      if (nextSlot === 60) target.setHours(target.getHours());
+      finishTimeInput.value = String(target.getHours()).padStart(2, '0') + ':' + String(target.getMinutes()).padStart(2, '0');
+      updateFinishPreview();
+    }
+    validateStart();
+  });
+
+  finishTimeInput.addEventListener('input', updateFinishPreview);
+
+  // Presets
+  presetBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      presetBtns.forEach(function (b) { b.classList.remove('selected'); });
+      btn.classList.add('selected');
+      selectedPreset = parseInt(btn.dataset.minutes) * 60;
+      customHours.value = '';
+      customMinutes.value = '';
+      customSeconds.value = '';
+      validateStart();
+    });
+  });
+
+  // Custom inputs
+  [customHours, customMinutes, customSeconds].forEach(function (input) {
+    input.addEventListener('input', function () {
+      presetBtns.forEach(function (b) { b.classList.remove('selected'); });
+      selectedPreset = null;
+      validateStart();
+    });
+  });
+
+  // Screens
+  function showScreen(screen) {
+    [setupScreen, timerScreen, timesupScreen].forEach(function (s) { s.classList.remove('active'); });
+    screen.classList.add('active');
+  }
+
+  // Color theming based on remaining time
+  function updateTimerTheme() {
+    var color, progressColor;
+
+    if (remainingSeconds <= 60) {
+      color = '#D64541';
+      progressColor = '#D64541';
+      timerDisplay.classList.add('critical');
+    } else if (remainingSeconds <= 300) {
+      color = '#D64541';
+      progressColor = '#D64541';
+      timerDisplay.classList.remove('critical');
+    } else if (remainingSeconds <= 600) {
+      color = '#C9860B';
+      progressColor = '#C9860B';
+      timerDisplay.classList.remove('critical');
+    } else {
+      color = '#202224';
+      progressColor = '#A5469A';
+      timerDisplay.classList.remove('critical');
+    }
+
+    timerPage.style.setProperty('--timer-color', color);
+    timerPage.style.setProperty('--progress-color', color);
+    progressFill.style.backgroundColor = progressColor;
+  }
+
+  // Start timer
+  function startTimer(seconds) {
+    totalSeconds = seconds;
+    remainingSeconds = seconds;
+    isPaused = false;
+    pauseBtn.textContent = 'Pause';
+    pausedBadge.classList.remove('visible');
+    totalLabel.textContent = fmtShort(totalSeconds) + ' total';
+
+    updateDisplay();
+    showScreen(timerScreen);
+
+    timerInterval = setInterval(function () {
+      if (!isPaused) {
+        remainingSeconds--;
+        updateDisplay();
+
+        if (remainingSeconds <= 0) {
+          clearInterval(timerInterval);
+          timerInterval = null;
+          showScreen(timesupScreen);
+        }
+      }
+    }, 1000);
+  }
+
+  function updateDisplay() {
+    timerText.textContent = fmt(Math.max(0, remainingSeconds));
+    var elapsed = totalSeconds - remainingSeconds;
+    var pct = totalSeconds > 0 ? (elapsed / totalSeconds) * 100 : 0;
+    progressFill.style.width = pct + '%';
+    elapsedLabel.textContent = fmtShort(elapsed) + ' elapsed';
+    updateTimerTheme();
+  }
+
+  // Start button
+  startBtn.addEventListener('click', function () {
+    var secs;
+    if (currentMode === 'duration') {
+      secs = selectedPreset || getCustomSeconds();
+    } else {
+      secs = getFinishSeconds();
+    }
+    if (secs > 0) startTimer(secs);
+  });
+
+  // Pause
+  pauseBtn.addEventListener('click', function () {
+    isPaused = !isPaused;
+    pauseBtn.textContent = isPaused ? 'Resume' : 'Pause';
+    pausedBadge.classList.toggle('visible', isPaused);
+  });
+
+  // +5 min
+  addBtn.addEventListener('click', function () {
+    totalSeconds += 300;
+    remainingSeconds += 300;
+    totalLabel.textContent = fmtShort(totalSeconds) + ' total';
+    updateDisplay();
+  });
+
+  // Reset
+  function resetTimer() {
+    if (timerInterval) {
+      clearInterval(timerInterval);
+      timerInterval = null;
+    }
+    isPaused = false;
+    selectedPreset = null;
+    presetBtns.forEach(function (b) { b.classList.remove('selected'); });
+    customHours.value = '';
+    customMinutes.value = '';
+    customSeconds.value = '';
+    timerDisplay.classList.remove('critical');
+    timerPage.style.setProperty('--timer-color', '#202224');
+    timerPage.style.setProperty('--progress-color', '#A5469A');
+    progressFill.style.width = '0%';
+    progressFill.style.backgroundColor = '';
+    validateStart();
+    showScreen(setupScreen);
+  }
+
+  resetBtn.addEventListener('click', resetTimer);
+  timesupResetBtn.addEventListener('click', resetTimer);
+
+  // Keyboard: space to pause/resume, Escape to reset
+  document.addEventListener('keydown', function (e) {
+    if (e.target.tagName === 'INPUT') return;
+    if (e.code === 'Space' && timerScreen.classList.contains('active')) {
+      e.preventDefault();
+      pauseBtn.click();
+    }
+    if (e.code === 'Escape') {
+      resetTimer();
+    }
+    if (e.code === 'Enter' && setupScreen.classList.contains('active')) {
+      startBtn.click();
+    }
+  });
+})();
+</script>
