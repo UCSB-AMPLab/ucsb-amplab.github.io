@@ -13,6 +13,10 @@
   }
 
   .post__content {
+    sup {
+      line-height: 0;
+    }
+
     hr {
       background-color: var(--accent);
     }
@@ -31,6 +35,14 @@
 
     .gallery--carousel .owl-dot.active::after {
       background: var(--accent);
+    }
+
+    .footnotes ol li {
+      font-size: 15px;
+
+      p {
+        font-size: 15px;
+      }
     }
   }
 
