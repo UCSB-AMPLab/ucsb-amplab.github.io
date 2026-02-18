@@ -1,6 +1,6 @@
 ---
 title: "Zasqua: a minimal-computing archival platform"
-subtitle: "An archive with no servers: tens of thousands of historical documents, millions of image tiles, and sophisticated search and filtering — all served as static files."
+subtitle: "A digital archive with no servers: tens of thousands of historical documents, millions of image tiles, and sophisticated search and filtering — all as static files."
 leadership:
   - Juan Cobo Betancourt
 date: 2026-02-17 00:00:00
