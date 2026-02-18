@@ -8,10 +8,10 @@ leadership:
 date: 2025-01-01 00:00:00
 status: completed
 description: As part of this work, UCSB undergrads digitized an archive of photographs of everyday life in the tugurios of Medellín, Colombia, taken in 1976 by Anne Tuzman and Glenn McNatt and preserved by Anne Fischel.
-featured_image: lab-placeholder.jpeg
+featured_image: digitization.jpeg
 accent_color: '#A5469A'
 gallery_images:
-  - lab-placeholder.jpeg
+  - digitization.jpeg
 ---
 
 ***Memories of the City: Digitizing Multimedia Archives of Medellín’s Recent History*** was a project to digitize and preserve two archives that concern memory, urban migration, and political struggles in Medellín, Colombia, focusing on Moravia and other neighborhoods. Driven from rural areas by violence and a lack of opportunities, migrants poured into Medellín from the 1950s, building homes and communities that grew into massive shantytowns (*tugurios*). There they developed grassroots movements that united peasants, priests, students, and women to resist state-led evictions, defend and promote their rights, and seek political participation. While some efforts led to legalization of their neighborhoods and infrastructural improvements, repression, legal struggles, and eviction threats persist today.

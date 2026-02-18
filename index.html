@@ -2,7 +2,7 @@
 layout: default
 overtitle: 
 title: Projects
-description: 
+description: AMPL develops tools and methodologies for achieving a more egalitarian archiving practice in Latin America and beyond.
 featured_image: /images/social.jpg
 ---
 
@@ -38,7 +38,7 @@ featured_image: /images/social.jpg
 
 						<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
 							{% for image in project.gallery_images %}
-							<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="" class="project__image"></a>
+							<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="{{ project.title }}" class="project__image"></a>
 							{% endfor %}
 						</div>
 
@@ -47,7 +47,7 @@ featured_image: /images/social.jpg
 							<p class="project__description --small">
 								{{ project.description }}
 								<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
-									style="color: {{ accent_color }}; --color-var: {{ accent_color }}; border-bottom: none; font-family: 'Silkscreen', serif; font-size: 110%">More details</a>
+									style="color: {{ accent_color }}; --color-var: {{ accent_color }}; border-bottom: none; font-family: 'Silkscreen', sans-serif; font-size: 110%">More details</a>
 							</p>
 						</div>
 					</article>
@@ -69,7 +69,7 @@ featured_image: /images/social.jpg
 
 						<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
 							{% for image in project.gallery_images %}
-							<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="" class="project__image"></a>
+							<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="{{ project.title }}" class="project__image"></a>
 							{% endfor %}
 						</div>
 
@@ -78,7 +78,7 @@ featured_image: /images/social.jpg
 							<p class="project__description --small">
 								{{ project.description }}
 								<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
-									style="color: {{ accent_color }}; --color-var: {{ accent_color }}; border-bottom: none; font-family: 'Silkscreen', serif; font-size: 110%">More details</a>
+									style="color: {{ accent_color }}; --color-var: {{ accent_color }}; border-bottom: none; font-family: 'Silkscreen', sans-serif; font-size: 110%">More details</a>
 							</p>
 						</div>
 					</article>
@@ -87,8 +87,6 @@ featured_image: /images/social.jpg
 			{% endfor %}
 		</div>
 	</section>
-
-<!-- 	{% include section__about.html %} -->
 
 <!-- <section class="recent-posts">
 		<div class="wrap grid">

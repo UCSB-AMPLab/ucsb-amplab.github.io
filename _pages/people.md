@@ -2,7 +2,7 @@
 layout: people-page
 title: People
 subtitle:
-description: 
+description: Faculty, researchers, and students at the Archives, Memory, and Preservation Lab.
 featured_image: /images/social.jpg
 ---
 

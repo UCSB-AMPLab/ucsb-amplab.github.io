@@ -9,4 +9,4 @@ featured_image: /images/social.jpg
 
 Here is a map:
 
-![](images/AGI-Map.png)
+![Map showing the location of AMPL in the West Wing of Girvetz Hall](/images/AGI-Map.png)

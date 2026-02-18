@@ -2,7 +2,7 @@
 layout: page
 title: HIST 207B Syllabus
 subtitle: 
-description:
+description: Syllabus for HIST 207B, Research Seminar in Digital History, Fall 2025.
 ---
 
 ## HIST 207B. Research Seminar in Digital History
@@ -29,7 +29,7 @@ Last quarter's focus was on acquiring skills, experimenting with new methods, an
 
 ### Schedule of classes, topics, activities, and readings
 
-Readings and preparatory work for class meetings are listed by the sessions by which they are due. Formal assignments are lised with dates.
+Readings and preparatory work for class meetings are listed by the sessions by which they are due. Formal assignments are listed with dates.
 
 | Week | Date      | Focus           | Format                                | In-class activity       | Assignments (by Friday) class |
 | ---- | --------- | --------------- | ------------------------------------- | ----------------------- | ----------------------------- |
@@ -39,7 +39,7 @@ Readings and preparatory work for class meetings are listed by the sessions by w
 | 4    | 10/21     |                 | Optional demo session in Telar tool (11 am)|                    |                               |
 | 5    | 10/28     | Presentations   | Class                                 | Presentations, feedback | Sharing first versions        |
 | 6    | 11/4      |                 | One-on-one consultations available    | Presentations, feedback |                               |
-| 7    | 11/11     |                 | Memorial day (no class)               |                         |                               |
+| 7    | 11/11     |                 | Veterans Day (no class)               |                         |                               |
 | 8    | 11/18     | Presentations   | Class: in-person check-in             |                         | Sharing second versions       |
 | 9    | 11/25     |                 | TBD                                   | Presentations, feedback |                               |
 | 10   | 12/2      | Presentations   | Class                                 | Presentations, feedback |                               |

@@ -18,7 +18,7 @@ These images were created as part of a broader project with colleagues in the Co
 
 ![](/images/projects/ahrb-notarias.jpg)
 
-We have been working with UCSB undergraduates, Colombian students, researchers, and community members to describe these materials for years. You can see some of the results of that work on Neogranadina's [digital archive platform, the ABC.](https://abcng.org)
+We have been working with UCSB undergraduates, Colombian students, researchers, and community members to describe these materials for years. You can see some of the results of that work on Neogranadina's [digital archive platform, Zasqua.](https://zasqua.org)
 
 This is a wonderful opportunity to learn to read early modern Spanish manuscript materials. Students who have worked on this project in the past have gone on to do amazing research on colonial Latin America, even at graduate level.
 

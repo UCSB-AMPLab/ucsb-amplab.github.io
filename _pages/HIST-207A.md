@@ -2,7 +2,7 @@
 layout: page
 title: HIST 207A Syllabus
 subtitle: 
-description:
+description: Syllabus for HIST 207A, Research Seminar in Digital History, Spring 2025.
 ---
 ## HIST 207A. Research Seminar in Digital History
 
@@ -32,7 +32,7 @@ Over these ten weeks will also read a book and a few chapters and essays pertain
 While I am certain that many of the tools and resources we will consider in this course will be useful and relevant to your projects, I also expect that some will not be. How useful a tool is depends entirely on whether it serves the specific needs of your project, and the purpose of this course is to provide you with a broad introduction to what is available so that you may determine whether something will make a contribution to your work or not. Equally, this process may also encourage you to rethink some of your questions or to take your research in new directions.
 
 ### Schedule of classes, topics, activities, and readings
-Readings and preparatory work for class meetings are listed by the sessions by which they are due. Formal assignments are lised with dates.
+Readings and preparatory work for class meetings are listed by the sessions by which they are due. Formal assignments are listed with dates.
 
 | Week | Date | Session focus                                                                           | In-class activity                                                                  | To do before class                                                                                     | Readings                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ---- | ---- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
