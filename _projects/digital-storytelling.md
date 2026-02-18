@@ -1,38 +1,38 @@
 ---
 title: Digital Storytelling
-subtitle: "Building digital infrastructure for object-based storytelling beyond the academy."
-leadership: 
+subtitle: "Building object-based digital narratives for audiences beyond the academy."
+leadership:
   - Alicia Boswell, History of Art and Architecture, UCSB
-  - Juan Cobo Betancourt, History, UCSB
-  - Santiago Muñoz Arbeláez, History, UT Austin
+  - Alida Jekabson, History of Art and Architecture, UCSB
+  - Izzy Devlin, History of Art and Architecture, UCSB
+  - Jeff O'Brien, Material/Image Research Lab (MIRL), UCSB
   - María Lumbreras, History of Art and Architecture, UCSB
-  - Jairo Melo, Digital Humanities Research Facilitator, UCSB Library
-  - Jeff O'Brien, Material/Image Research Lab (MIRL), History of Art and Architecture, UCSB
+  - Juan Cobo Betancourt, History, UCSB
   - Camilla Falanesca, History, UCSB
   - María del Pilar Ramírez Restrepo, History, UCSB
   - Adelaida Ávila, Neogranadina
+  - Santiago Muñoz Arbeláez, History, UT Austin
 date: 2025-08-01 00:00:00
-description: A prototype platform and methodology that will allow scholars to present expert narratives aimed at different audiences through the display of born-digital or digitized objects, whether historical manuscripts, images, video or audio recordings, or 3D visualizations.
-featured_image: weaving-histories-mockup.jpg
+description: "A digital narrative investigating a 16th-century khipu in UCSB's Art, Design & Architecture Museum through material, haptic, and digital imaging methods."
+featured_image: khipu-home.jpg
 accent_color: '#A5469A'
 gallery_images:
-  - weaving-histories-mockup.jpg
+  - khipu-panel.jpg
+  - khipu-home.jpg
 ---
 
-In 2020, Santiago Muñoz (PI) developed [***Colonial Landscapes*** (*Paisajes coloniales*)](https://colonial-landscapes.com), an interactive, bilingual pedagogical platform that explores the history of the region around Bogotá in the highlands of what is now Colombia through a 1614 map. The platform is intended for a non-academic audience, particularly of Colombian middle, high school, and undergraduate students, as an innovative way of exploring the changes undergone by the Indigenous Muisca peoples who inhabited this region, and the landscape itself, as a result of European colonization. In four short chapters, the platform guides readers through the map, highlighting relevant sections, and using specific details in the image as launching points for explanation and analysis. 
+How do scholars present expert research on a physical object — a manuscript, a painting, a piece of textile — to audiences who may never handle it, may not read the relevant languages, and are unlikely to encounter a conventional academic publication? This was the question at the centre of the digital storytelling initiative, which set out to develop platforms and methodologies for object-based digital narratives that could reach general audiences, students, and communities without sacrificing scholarly rigour.
 
-The tone is accessible and readers are invited, through a thoughtful user interface — designed and built by Adelaida Ávila — to explore and dig deeper by opening panels with additional information, definitions of key concepts, additional sources and suggestions for further reading. Users are also free to explore the map independently of this narrative, while scholars can also easily access digitized sources and relevant information for teaching and research (see the screenshots below). 
+The initiative grew out of [*Colonial Landscapes* (*Paisajes Coloniales*)](https://paisajescoloniales.com), an interactive bilingual platform developed by Santiago Muñoz in 2020 that explores the history of the region around Bogotá through a 1614 map. *Colonial Landscapes* demonstrated that it was possible to create a rich, accessible, pedagogically sophisticated visual narrative around a digitised object — guiding general audiences and students through the map, using its specific details as anchors for historical analysis — as a simple static website with no ongoing hosting costs. The digital storytelling initiative set out to generalise that approach, testing it through a series of collaborative scholarly projects.
 
 {% include post-components/gallery.html
   columns = 1
   full_width = true
-  images = "/images/projects/colonial_landscapes-en-1.jpg,/images/projects/colonial_landscapes-en-2.jpg,/images/projects/colonial_landscapes-en-3.jpg,/images/projects/colonial_landscapes-en-4.jpg
-  "
+  images = "/images/projects/khipu-home.png"
 %}
 
-The website is built as a simple, serverless, static website, which has ensured it has remained accessible, robust, and — significantly — continues to be hosted at no cost on GitHub pages. 
+The first collaborative project was *Haptic Khipu*, led by the [Material/Image Research Lab (MIRL)](https://mirl.arthistory.ucsb.edu/) in UCSB's History of Art and Architecture department, in collaboration with AMPL. Khipus — knotted-cord recording devices used across the Andes to encode numerical, administrative, and perhaps narrative information — are among the most challenging objects to study, let alone communicate: the direction of each cord's twist, the type and placement of its knots, the colour and fibre of the threads are themselves data, and a screen can only take you so far. *Haptic Khipu* drew on MIRL's work examining a 16th-century example held in UCSB's Art, Design & Architecture Museum — a gift of Dr. Stephen S. Goodspeed and Mrs. John Goodspeed Ainsworth — through material analysis, tactile examination, and high-resolution digital imaging, with the aim of understanding how Andean recordkeeping systems encoded knowledge in fibre and form.
 
-We are now drawing on this experience by turning the code base, design language, narrative form, and pedagogical structure of *Colonial landscapes* into a replicable open-source framework that will allow others to generate their own public-facing digital narratives on the basis of digitized or born-digital objects, whether 2D scans like the 1614 map at the heart of *Colonial landscapes* or 3D models of ancient and historic artifacts. 
+The publication presents this research as an interactive visual narrative built with [Telar](/project/telar). Rather than a conventional article or exhibition catalogue, it guides readers through the object step by step, pairing high-resolution images with analytical observations and allowing anyone with a browser to zoom into the specific details that anchor the argument. It is freely available at [khipu.mirl.arthistory.ucsb.edu](https://khipu.mirl.arthistory.ucsb.edu). A Spanish translation is in preparation.
 
-In order to develop, test, and assess the prototype, we are develop two collaborative public-facing projects with UCSB students that use different kinds of sources.
-
+The other side of the project, the work to create a platform in which to create publications of this kind, eventually became [Telar](/project/telar), AMPL's open-source visual storytelling framework.
