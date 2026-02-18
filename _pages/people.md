@@ -31,7 +31,7 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 ##### Natalie Cobo
 
-*Affilate Researcher, Max Planck Institute for Legal History and Legal Theory*
+*Burdick Fellow, UCSB; Affiliate Researcher, Max Planck Institute for Legal History and Legal Theory*
 
 ##### María Lumbreras
 
@@ -51,10 +51,6 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 #### Graduate Students
 
-##### Camilla Falanesca
-
-*PhD student, Department of History, UCSB*
-
 ##### Lee Leal-Ramírez
 
 *MA student, Latin American and Iberian Studies Program, UCSB*
@@ -69,22 +65,17 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 #### Undergraduate Students
 
-##### Benjamin Ancho
+##### Gemma Acevedo
 
-*Research Assistant, People of Sondondo Project, Spring 2025-*
+*Research Assistant, Activating Archives Project, Fall 2025-*
 
-##### Saketh Ayinaparthi
+##### Sanjana Bhupathi
 
-*Research Assistant, People of Sondondo Project, Spring 2025-*
+*Research Assistant, Telar Project, Fall 2025-*
 
+##### Isabelle Gomez
 
-##### Jennifer Ortiz
-
-*Research Assistant, Collaborative Cataloging Project, Fall 2024, Spring 2025-*
-
-##### Noemi Ung
-
-*Research Assistant, Collaborative Cataloging Project, Fall 2024-*
+*Research Assistant, Activating Archives Project, Fall 2025-*
 
 ##### Maggie O'Sullivan
 
@@ -94,13 +85,27 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 *Research Assistant, Collaborative Cataloging Project, Winter 2024-*
 
-##### Dongchi Xue
+##### Ashley Vazquez
 
-*Research Assistant, People of Sondondo Project, Spring 2025-*
+*Research Assistant, Activating Archives Project, Fall 2025-*
 
 ### Alumni
 
+#### Graduate Students
+
+##### Camilla Falanesca
+
+*PhD student, Department of History, UCSB; lab manager, 2024-2025*
+
 #### Undergraduates
+
+##### Benjamin Ancho
+
+*Research Assistant, People of Sondondo Project, Spring-Fall 2025*
+
+##### Saketh Ayinaparthi
+
+*Research Assistant, People of Sondondo Project, Spring 2025*
 
 ##### Binta Barrie
 
@@ -118,6 +123,10 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 *Research Assistant, Memories of the City Project, Winter-Spring 2025*
 
+##### Jennifer Ortiz
+
+*Research Assistant, Collaborative Cataloging Project, Fall 2024, Spring-Fall 2025*
+
 ##### Piya Rao
 
 *Research Assistant, Memories of the City Project, Winter 2025-Spring 2025*
@@ -129,3 +138,11 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 ##### Jermaine Smith
 
 *Research Assistant, Collaborative Cataloging Project, Winter 2024-Spring 2025*
+
+##### Noemi Ung
+
+*Research Assistant, Collaborative Cataloging Project, Fall 2024-Spring 2025*
+
+##### Dongchi Xue
+
+*Research Assistant, People of Sondondo Project, Spring-Fall 2025*
