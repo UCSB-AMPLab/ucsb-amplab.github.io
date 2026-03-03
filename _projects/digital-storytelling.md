@@ -13,6 +13,7 @@ leadership:
   - Adelaida Ávila, Neogranadina
   - Santiago Muñoz Arbeláez, History, UT Austin
 date: 2025-08-01 00:00:00
+status: completed
 description: "A digital narrative investigating a 16th-century khipu in UCSB's Art, Design & Architecture Museum through material, haptic, and digital imaging methods."
 featured_image: khipu-home.jpg
 accent_color: '#A5469A'
