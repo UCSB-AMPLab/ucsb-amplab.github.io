@@ -7,12 +7,14 @@ header_settings:
 
 menu_settings:
   menu_items:
+    - title: 'Tools'
+      url: '/#tools'
     - title: 'Projects'
-      url: '/'
+      url: '/#projects'
+    - title: 'Opportunities'
+      url: '/#opportunities'
     - title: 'People'
       url: '/people'
-    - title: 'Opportunities'
-      url: '/opportunities'
 
 
 footer_settings:
@@ -38,7 +40,7 @@ color_settings:
 
 font_settings:
   font_embed: '<link href="https://fonts.googleapis.com/css?family=Silkscreen:wght@400|Roboto+Slab:wght@100..900|Ubuntu+Mono:400,700" rel="stylesheet">'
-  title_font: 'Produkt, serif'
+  title_font: 'Produkt, "Roboto Slab", serif'
   display_font: 'Silkscreen, sans-serif'
   body_font: '"Ubuntu Mono", sans-serif'
   regular_weight: 200
@@ -146,7 +148,7 @@ font_settings:
     letter_spacing: 0.4
 
 advanced_settings:
-  ajax_loading: true
+  ajax_loading: false
   analytics_code: ""
   custom_styles: ""
   header_js: ""
