@@ -7,14 +7,17 @@ featured_image: /images/social.jpg
 home_strata:
   tools:
     layout: banner
+    blurb: Open-source primitives for community archives and tools for digital humanities pedagogy.
     past:
       label: Archived
   projects:
     layout: square
+    blurb: Research partnerships and collaborations activating archives in Latin America and beyond.
     past:
       label: Completed
   opportunities:
     layout: side
+    blurb: Hands-on ways for students and volunteers to get involved.
     past:
       label: Past
 ---
@@ -54,6 +57,7 @@ home_strata:
 				<div class="layer__gutter">
 					<div class="layer__num">{{ idx }}</div>
 					<div class="layer__tag">{{ stratum_name | capitalize }}</div>
+					{% if stratum.blurb %}<div class="layer__gutter-blurb">{{ stratum.blurb }}</div>{% endif %}
 				</div>
 				<div>
 					<h3 class="layer__title">{{ stratum_name | capitalize }}</h3>
