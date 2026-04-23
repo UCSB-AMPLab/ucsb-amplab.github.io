@@ -1,6 +1,8 @@
 ---
 title: Collaborative cataloging
 subtitle: "Help us catalogue historical materials from Latin America"
+status: active
+kind: VOLUNTEER
 leadership: 
   - Juan Cobo Betancourt
 date: 2025-01-20 00:00:00

@@ -1,8 +1,9 @@
 ---
 title: "Zasqua"
 subtitle: "A digital archive with no servers: tens of thousands of historical documents, millions of image tiles, and sophisticated search and filtering — all as static files."
+status: active
+kind: SOFTWARE
 leadership:
-  - Juan Cobo Betancourt
 date: 2026-02-17 00:00:00
 description: "Zasqua is an open-source platform for hosting and discovering large collections of digitized historical documents. It currently holds over 106,000 descriptions from five repositories in Colombia and Peru."
 featured_image: zasqua-home.jpg

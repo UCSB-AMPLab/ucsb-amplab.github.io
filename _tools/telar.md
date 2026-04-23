@@ -1,6 +1,8 @@
 ---
 title: Telar
 subtitle: "An open-source visual narrative framework for scholars, students, and communities working with digitised objects."
+status: active
+kind: SOFTWARE
 leadership:
   - Juan Cobo Betancourt, History, UCSB
   - Santiago Muñoz Arbeláez, History, UT Austin
