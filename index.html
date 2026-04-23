@@ -1,107 +1,79 @@
 ---
 layout: default
-overtitle: 
-title: Projects
+title: Archives, Memory, and Preservation Lab
 description: AMPL develops tools and methodologies for achieving a more egalitarian archiving practice in Latin America and beyond.
 featured_image: /images/social.jpg
+
+home_strata:
+  tools:
+    layout: banner
+    past:
+      label: Archived
+  projects:
+    layout: square
+    past:
+      label: Completed
+  opportunities:
+    layout: side
+    past:
+      label: Past
 ---
 
-<div class="page-home">
+<section class="hrA__hero">
+	<div class="hrA__hero-bg hero-bg-svg"></div>
+	<div class="wrap">
+		<p class="hrA__lede">
+			Welcome to the <span style="font-weight: 600">Archives, Memory, and Preservation Lab</span>, a laboratory for research and learning in the <a href="https://clair.ucsb.edu">Center for Latin American and Iberian Research</a> at UC Santa Barbara.
+		</p>
+		<p class="hrA__lede hrA__lede--typed">
+			<span class="cyc" data-typed="AMPL develops tools and methodologies for achieving a more egalitarian archiving practice in Latin America and beyond."><span style="font-weight: 600">AMPL</span> develops tools and methodologies for achieving a more egalitarian archiving practice in Latin America and beyond.</span>
+		</p>
+	</div>
+</section>
 
-	{% if site.data.settings.hero_settings.background_image %}
-	<img src="{{ site.data.settings.hero_settings.background_image | relative_url }}" class="hero__background" draggable="false">
-	{% endif %}
+<div class="wrap">
+	<div class="strat">
+		{% assign stratum_names = "tools,projects,opportunities" | split: "," %}
+		{% for stratum_name in stratum_names %}
+			{% assign stratum = page.home_strata[stratum_name] %}
+			{% assign idx = forloop.index | prepend: "0" %}
 
-	<section class="hero">
-		<div class="wrap grid">
-			<div class="title">
-<!-- 				<h1 style="font-size: 40px">{{ page.title }}</h1>
-				<p class="subtitle">{{ page.overtitle }}</p> -->
+			{%- comment -%}
+			Pull every page from the matching collection. Order: home_order ascending
+			(absent => 9999, sorted to the end), then date descending as fallback.
+			{%- endcomment -%}
+			{% assign all_items = site[stratum_name] | sort: "home_order" %}
+
+			{%- comment -%}Split into current vs past based on each page's status field.{%- endcomment -%}
+			{% assign past_items = all_items | where_exp: "i", "i.status == 'completed' or i.status == 'archived' or i.status == 'past'" %}
+			{% assign current_items = all_items | where_exp: "i", "i.status != 'completed' and i.status != 'archived' and i.status != 'past'" %}
+
+			<div class="layer layer--thumbs layout--{{ stratum.layout }}" id="{{ stratum_name }}" data-section="{{ stratum_name }}">
+				<div class="layer__hover-bg"></div>
+				<div class="layer__marks"></div>
+				<div class="layer__gutter">
+					<div class="layer__num">{{ idx }}</div>
+					<div class="layer__tag">{{ stratum_name | capitalize }}</div>
+				</div>
+				<div>
+					<h3 class="layer__title">{{ stratum_name | capitalize }}</h3>
+
+					<div class="layer__items">
+						{% for item in current_items %}{% include home-mini.html page=item %}{% endfor %}
+					</div>
+
+					{% if stratum.past and past_items.size > 0 %}
+						<div class="layer__past layout--side">
+							<div class="layer__past-label">{{ stratum.past.label }}</div>
+							<div class="layer__items">
+								{% for item in past_items %}{% include home-mini.html page=item %}{% endfor %}
+							</div>
+						</div>
+					{% endif %}
+
+				</div>
+				{% unless forloop.last %}<div class="strat__arrow"></div>{% endunless %}
 			</div>
-			<p class="intro subtitle--light">
-				Welcome to the <span style="font-weight: 600">Archives, Memory, and Preservation Lab</span>, a laboratory for research and learning in the <a href="https://clair.ucsb.edu" style="font-weight: 400">Center for Latin American and Iberian Research</a> at the University of California, Santa Barbara.
-			<br>
-			<br>
-				<span style="font-weight: 600">AMPL</span> develops tools and methodologies for achieving a more egalitarian archiving practice in Latin America and beyond.
-			</p>
-		</div>
-	</section>
-	<section class="listing">
-		<div class="wrap">
-			<h1 style="margin-bottom: 3rem;">Current projects</h1>
-			{% for project in site.projects reversed %}
-				{% if project.status != "completed" %}
-					{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
-
-					<article class="project__preview">
-						<h2 class="project__title"><a href="{{ project.url | relative_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h2>
-
-						<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
-							{% for image in project.gallery_images %}
-							<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="{{ project.title }}" class="project__image"></a>
-							{% endfor %}
-						</div>
-
-						<div class="project__content grid" style="border-color: {{ accent_color }}">
-							<p class="project__subtitle subtitle--light">{{ project.subtitle }}</p>
-							<p class="project__description --small">
-								{{ project.description }}
-								<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
-									style="color: {{ accent_color }}; --color-var: {{ accent_color }}; border-bottom: none; font-family: 'Silkscreen', sans-serif; font-size: 110%">More details</a>
-							</p>
-						</div>
-					</article>
-				{% endif %}
-
-			{% endfor %}
-		</div>
-	</section>
-
-	<section class="listing">
-		<div class="wrap">
-		<h1 style="margin-bottom: 3rem;">Completed Projects</h1>
-			{% for project in site.projects reversed %}
-				{% if project.status == "completed" %}
-					{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
-
-					<article class="project__preview">
-						<h2 class="project__title"><a href="{{ project.url | relative_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h2>
-
-						<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
-							{% for image in project.gallery_images %}
-							<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="{{ project.title }}" class="project__image"></a>
-							{% endfor %}
-						</div>
-
-						<div class="project__content grid" style="border-color: {{ accent_color }}">
-							<p class="project__subtitle subtitle--light">{{ project.subtitle }}</p>
-							<p class="project__description --small">
-								{{ project.description }}
-								<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
-									style="color: {{ accent_color }}; --color-var: {{ accent_color }}; border-bottom: none; font-family: 'Silkscreen', sans-serif; font-size: 110%">More details</a>
-							</p>
-						</div>
-					</article>
-				{% endif %}
-
-			{% endfor %}
-		</div>
-	</section>
-
-<!-- <section class="recent-posts">
-		<div class="wrap grid">
-			<header class="recent-posts__header">
-				<h4>Recent blog posts</h4>
-				<a href="{{ '/blog' | relative_url }}" class="action button--text--accent --right">All Posts</a>
-			</header>
-
-			<div class="recent-posts__list grid">
-				{% for post in site.posts limit: 3 %}
-				{% include component__post-preview.html %}
-				{% endfor %}
-			</div>
-
-			<a href="{{ '/blog' | relative_url }}" class="action-bottom button--text--accent --right">All Posts</a>
-		</div>
-	</section> -->
+		{% endfor %}
+	</div>
 </div>

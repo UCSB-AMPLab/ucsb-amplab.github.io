@@ -184,3 +184,11 @@ $baseurl: '{{ site.baseurl }}';
 
 @import "_includes/_section__listing";
 @import "_includes/_section__hero";
+
+
+// - - - - - - - - - - 2026 redesign — homepage stratigraphy + landings
+
+@import "_redesign-tokens";
+@import "_redesign-base";
+@import "_redesign-home";
+@import "_redesign-landings";

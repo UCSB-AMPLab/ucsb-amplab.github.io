@@ -1,0 +1,180 @@
+/* ============================================================
+   AMPL (Archives, Memory, and Preservation Lab) — Tokens
+   Source of truth: UCSB-AMPLab/ucsb-amplab.github.io
+   ============================================================ */
+
+/* Fonts are loaded by the existing font_embed in _data/settings.yml
+   (Silkscreen, Roboto Slab, Ubuntu Mono via Google Fonts). */
+
+:root {
+  /* ---------- Colors ---------- */
+  /* Neutral surfaces (white/near-white paper) */
+  --bg:              #ffffff;       /* background_color */
+  --bg-alt:          #f4f5f6;       /* background_alt_color — chip/code surface */
+  --border:          #ECEDEF;       /* hairline divider */
+
+  /* Text scale — cool slate */
+  --fg-1:            #202224;       /* text_dark_color — primary body + headings */
+  --fg-2:            #6C7A89;       /* text_medium_color — meta, secondary */
+  --fg-3:            #AEB3BB;       /* text_light_color — placeholder, labels */
+
+  /* Accent — the signature AMPL magenta/plum */
+  --accent:          #A5469A;       /* primary accent (hover, links, dots) */
+  --accent-ink:      #8B467D;       /* darker plum — footer background */
+  --accent-deep:     #743A6A;       /* deepest plum — footer-bottom */
+  --accent-08:       rgba(165, 70, 154, 0.08);  /* tint: hover bg */
+  --accent-14:       rgba(165, 70, 154, 0.14);  /* tint: pressed */
+  --accent-20:       rgba(165, 70, 154, 0.20);  /* tint: underline */
+  --accent-60:       rgba(165, 70, 154, 0.60);  /* decorative marks */
+
+  /* Secondary hero-accent hues — used on per-project `accent_color` */
+  --hue-orange:      #D97743;       /* background-hero-orange tone */
+  --hue-blue:        #3B6BA5;       /* background-hero-blue tone */
+
+  /* Status / system */
+  --error:           #D64541;       /* error_color */
+
+  /* Brand partner lock-ups (UCSB + CLAIR) */
+  --ucsb-navy:       #003660;
+  --ucsb-gold:       #FEBC11;
+
+  /* ---------- Type families ---------- */
+  /* body_font: monospace, feels like a typewriter/archival log */
+  --font-body:       "Ubuntu Mono", ui-monospace, Menlo, Consolas, monospace;
+  /* title_font: serif (Produkt) — we fall back to Roboto Slab */
+  --font-title:      "Roboto Slab", "Produkt", Georgia, serif;
+  /* display_font: pixel bitmap — the "LAB" lettermark */
+  --font-display:    "Silkscreen", ui-monospace, monospace;
+
+  /* Weights */
+  --fw-thin:         200;   /* regular_weight — yes, body is 200 */
+  --fw-reg:          400;
+  --fw-med:          500;
+  --fw-bold:         600;   /* bold_weight */
+
+  /* ---------- Semantic type ramp (desktop) ---------- */
+  --h1-size:   64px;   --h1-lh:   72px;   --h1-tr:  -1.5px;
+  --h2-size:   48px;   --h2-lh:   56px;   --h2-tr:  -1.6px;
+  --h3-size:   40px;   --h3-lh:   48px;   --h3-tr:  -1.4px;
+  --h4-size:   32px;   --h4-lh:   36px;   --h4-tr:  -1px;
+  --h5-size:   20px;   --h5-lh:   1.6;
+  --p-size:    18px;   --p-lh:    28px;
+  --p-sm-size: 16px;   --p-sm-lh: 24px;
+  --label-size: 14px;  --label-tr: 0.8px;
+  --footnote-size: 13px;
+
+  /* ---------- Spacing ---------- */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  24px;
+  --sp-6:  32px;
+  --sp-7:  48px;
+  --sp-8:  64px;
+  --sp-9:  80px;
+  --sp-10: 120px;
+
+  /* ---------- Breakpoints (from _mixins.scss) ---------- */
+  --bp-phonel:  480px;
+  --bp-tabletp: 768px;
+  --bp-tabletl: 1024px;
+  --bp-laptop:  1220px;
+  --bp-desktop: 1420px;
+
+  /* ---------- Radii ---------- */
+  --radius-sm: 8px;    /* menu toggle, close button */
+  --radius-pill: 40px; /* button--fill */
+
+  /* ---------- Motion ---------- */
+  --ease-brand: cubic-bezier(0.2, 0.3, 0, 1);    /* page transitions */
+  --ease-out:   ease-in-out;
+  --dur-fast:   120ms;
+  --dur-med:    0.4s;
+  --dur-slow:   0.6s;
+}
+
+/* ---------- Semantic element defaults ---------- */
+body {
+  background: var(--bg);
+  color: var(--fg-1);
+  font-family: var(--font-body);
+  font-weight: var(--fw-thin);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, .h1, h2, .h2 {
+  font-family: var(--font-title);
+  color: var(--fg-1);
+  font-weight: var(--fw-med);
+  margin-top: 1rem;
+}
+
+h3, .h3, h4, .h4, h5, .h5, h6, .h6, .subtitle {
+  font-family: var(--font-title);
+  color: var(--fg-1);
+  font-weight: var(--fw-med);
+  margin-top: 1rem;
+}
+
+h1, .h1 { font-size: var(--h1-size); line-height: var(--h1-lh); letter-spacing: var(--h1-tr); }
+h2, .h2 { font-size: var(--h2-size); line-height: var(--h2-lh); letter-spacing: var(--h2-tr); }
+h3, .h3 { font-size: var(--h3-size); line-height: var(--h3-lh); letter-spacing: var(--h3-tr); }
+h4, .h4 { font-size: var(--h4-size); line-height: var(--h4-lh); letter-spacing: var(--h4-tr); }
+h5, .h5 { font-size: var(--h5-size); line-height: var(--h5-lh); }
+
+p, .body {
+  font-family: var(--font-body);
+  font-weight: var(--fw-reg);
+  font-size: var(--p-size);
+  line-height: var(--p-lh);
+}
+p.--small, .body.--small {
+  font-size: var(--p-sm-size);
+  line-height: var(--p-sm-lh);
+}
+
+a { color: var(--fg-1); text-decoration: none; transition: color var(--dur-fast) var(--ease-out); }
+a:hover { color: var(--accent); }
+
+/* Dotted underline link style (used in body copy) */
+p a, .link--dotted {
+  border-bottom: 2px dotted var(--fg-3);
+  font-weight: var(--fw-med);
+}
+p a:hover, .link--dotted:hover { border-color: var(--accent); }
+
+.subtitle {
+  font-family: var(--font-title);
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.16px;
+  font-weight: var(--fw-med);
+}
+.subtitle--light { font-weight: var(--fw-reg); }
+
+.label {
+  font-family: var(--font-title);
+  font-size: var(--label-size);
+  letter-spacing: var(--label-tr);
+  line-height: 16px;
+  color: var(--fg-3);
+  text-transform: uppercase;
+  font-weight: var(--fw-med);
+}
+
+/* The voice element: pixel-bitmap "LAB" wordmark.
+   Used for CTAs ("More details"), overtitles, small emphatic labels. */
+.display-pixel {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+code, pre, kbd {
+  font-family: var(--font-body);
+  font-size: 15px;
+  background: var(--bg-alt);
+}
+
+::selection { background: var(--accent); color: var(--bg); }
