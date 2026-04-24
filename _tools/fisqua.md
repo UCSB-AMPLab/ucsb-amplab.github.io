@@ -24,4 +24,4 @@ The hosted instance is already in use. It supports the cataloguing work of Neogr
 
 The name **Fisqua** comes from a Muisca verb meaning *gathering scattered things*, related to forms for searching, gathering, and traversing — a cluster of meanings that describes both the work the tool enables and the historical processes the resulting catalogues help document.
 
-Source code: [Fisqua on GitHub](https://github.com/neogranadina/zasqua-catalogacion).
+Source code: [Fisqua on GitHub](https://github.com/UCSB-AMPLab/fisqua).
