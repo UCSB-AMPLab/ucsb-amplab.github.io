@@ -72,7 +72,7 @@
     padding: 64px 0;
 
     .wrap {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: auto 1fr;
     }
 
     .header__menu {
@@ -80,7 +80,7 @@
       height: initial;
       position: relative;
       background-color: none;
-      justify-self: center;
+      justify-self: end;
       opacity: 1;
       visibility: visible;
       top: 0;
@@ -202,12 +202,19 @@
   @include mq(tabletp) {
     margin-top: 0;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 36px;
+    row-gap: 6px;
+    max-width: 480px;       /* narrow enough that 4 items can't fit on one line */
+    margin-left: auto;      /* keep the menu right-aligned in its column */
 
     .menu__list__item {
-      margin-bottom: 0px;
-      
+      margin: 0;
+      flex: 0 0 auto;       /* natural item widths — wrap when they don't fit */
+
       &:not(:first-child) {
-        margin-left: 30px;
+        margin-left: 0;     /* override the older flex-row spacing; gap handles it */
       }
     }
 
@@ -219,15 +226,15 @@
       font-weight: $button-weight;
       letter-spacing: $button-spacing;
       text-transform: uppercase;
-      
+
       @include mq(tabletl) {
         font-size: 24px;
       }
-      
+
       @include mq(laptop) {
         font-size: 28px;
       }
-      
+
     }
 
     .menu__cta__link {

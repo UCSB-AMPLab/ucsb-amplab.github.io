@@ -10,7 +10,13 @@ collections:
   posts:
     output: true
     permalink: /blog/:slug
+  tools:
+    output: true
+    permalink: /project/:slug
   projects:
+    output: true
+    permalink: /project/:slug
+  opportunities:
     output: true
     permalink: /project/:slug
 
@@ -35,7 +41,19 @@ defaults:
   -
     scope:
       path: ""
+      type: "tools"
+    values:
+      layout: "project"
+  -
+    scope:
+      path: ""
       type: "projects"
+    values:
+      layout: "project"
+  -
+    scope:
+      path: ""
+      type: "opportunities"
     values:
       layout: "project"
 

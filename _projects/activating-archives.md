@@ -1,6 +1,7 @@
 ---
 title: Activating Archives
 subtitle: "A Blueprint for Egalitarian Archival Practices"
+status: active
 leadership: 
   - Juan Cobo Betancourt
   - Natalie Cobo

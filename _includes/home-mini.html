@@ -1,0 +1,21 @@
+{%- comment -%}
+Renders one mini card from a collection page (tools / projects / opportunities).
+Caller passes the page directly: {% include home-mini.html page=item %}.
+The card label (kicker) comes from page.kind, falling back to page.status uppercased.
+{%- endcomment -%}
+
+{%- assign p = include.page -%}
+{%- assign kind = p.kind | default: p.status | default: "ACTIVE" | upcase -%}
+{%- assign img = p.featured_image -%}
+{%- if img and img != "" -%}{%- unless img contains "/" -%}{%- assign img = "/images/projects/" | append: img -%}{%- endunless -%}{%- endif -%}
+
+<a class="mini mini--thumb" href="{{ p.url | relative_url }}">
+	{%- if img -%}
+		<div class="mini__thumb"><img src="{{ img | relative_url }}" alt="" /></div>
+	{%- endif -%}
+	<div class="mini__body">
+		<div class="mini__kicker">{{ kind }}</div>
+		<h4 class="mini__title">{{ p.title }}</h4>
+		{%- if p.subtitle -%}<div class="mini__meta">{{ p.subtitle | strip_html }}</div>{%- endif -%}
+	</div>
+</a>

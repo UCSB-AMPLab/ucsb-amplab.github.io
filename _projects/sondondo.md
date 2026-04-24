@@ -1,6 +1,7 @@
 ---
 title: The People of the Sondondo Valley
 subtitle: A project to develop a digital archive and historical dataset useful to Andean communities
+status: active
 leadership: 
   - Funding from the French Institute of Andean Studies (IFEA) 
   - and Imagining Futures (AHRC, GCRF Network, UKRI, University of Exeter)
