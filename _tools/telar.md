@@ -10,7 +10,7 @@ leadership:
   - Natalie Cobo, Neogranadina
 date: 2025-12-02 00:00:00
 description: "An open-source framework for building interactive visual narratives around digitised objects, built on minimal computing principles and free to use."
-featured_image: telar-home.jpg
+featured_image: /images/tools/telar-cover.jpg
 accent_color: '#A5469A'
 gallery_images:
   - telar-home.jpg
