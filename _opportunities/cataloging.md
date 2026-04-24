@@ -5,6 +5,7 @@ status: active
 kind: VOLUNTEER
 leadership: 
   - Juan Cobo Betancourt
+  - Eduardo Castro
 date: 2025-01-20 00:00:00
 description: Learn how to read 16th and 17th-century manuscripts from Tunja, Colombia, and help us make them available to researchers, students, and the public.
 featured_image: catalogacion-2x3.jpg
