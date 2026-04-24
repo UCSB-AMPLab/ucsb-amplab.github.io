@@ -3,6 +3,7 @@ title: Digitization Toolkit
 subtitle: An NEH-funded project to develop an integrated toolkit of hardware, software, and documentation to allow lower-resourced institutions, collectives, and communities to digitize their archival collections at low cost.
 status: active
 kind: HARDWARE
+home_order: 5
 leadership: 
   - NEH Award HAA-304052-25
   - Juan Cobo Betancourt, UCSB (PI/Project Director)

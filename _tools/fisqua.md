@@ -3,6 +3,7 @@ title: "Fisqua"
 subtitle: "A multi-tenant cataloguing platform for archives of any size — open-source primitives, hosted by AMPL or self-deployable."
 status: active
 kind: SOFTWARE
+home_order: 4
 leadership:
 date: 2026-04-23 00:00:00
 description: "Fisqua is a multi-tenant cataloguing platform for archives ranging from community-led initiatives to major libraries, built on open archival standards and minimal computing infrastructure."
