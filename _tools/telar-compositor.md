@@ -3,6 +3,7 @@ title: "Telar Compositor"
 subtitle: "A web-based authoring environment for Telar stories — visual composition in the browser, static output in your own repository."
 status: active
 kind: SOFTWARE
+home_order: 2
 leadership:
 date: 2026-04-24 00:00:00
 description: "Telar Compositor is AMPL's web-based authoring environment for Telar, the open-source visual narrative framework. It replaces the Google Sheets authoring workflow with a purpose-built editor while preserving Telar's minimal-computing publication architecture."

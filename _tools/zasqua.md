@@ -3,6 +3,7 @@ title: "Zasqua"
 subtitle: "A digital archive with no servers: tens of thousands of historical documents, millions of image tiles, and sophisticated search and filtering — all as static files."
 status: active
 kind: SOFTWARE
+home_order: 3
 leadership:
 date: 2026-02-17 00:00:00
 description: "Zasqua is an open-source publication frontend that turns catalogued archival data into fast, server-free public sites. Its first deployment, Neogranadina's zasqua.org, holds over 106,000 descriptions from five repositories in Colombia and Peru."
