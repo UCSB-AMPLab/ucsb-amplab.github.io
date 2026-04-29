@@ -97,6 +97,15 @@
 	line-height: 24px;
 }
 
+.ucsb-wordmark {
+	svg { max-width: 100%; height: auto; display: block; }
+
+	.footer__title {
+		max-width: 100%;
+		overflow-wrap: break-word;
+	}
+}
+
 .clair-logo {
 	max-width: 80%;
 }

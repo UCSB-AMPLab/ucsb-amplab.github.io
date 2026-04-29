@@ -12,16 +12,21 @@
   .header__logo {
     display: block;
     align-self: center;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     position: relative;
     z-index: 10;
-    
+
+    img { max-width: 100%; height: auto; display: block; }
+
     @include mq(tabletl) {
       width: 400px;
+      max-width: 400px;
     }
-    
+
     @include mq(laptop) {
       width: 500px;
+      max-width: 500px;
     }
   }
 
