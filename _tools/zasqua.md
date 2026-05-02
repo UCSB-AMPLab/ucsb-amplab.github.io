@@ -35,6 +35,6 @@ The collections span the colonial and republican periods of Colombia and Peru. T
 
 Further Zasqua deployments are planned through UCSB's [**Robinson Archives Initiative**](https://www.library.ucsb.edu/news/ucsb-receives-robinson-archive), a partnership with community archives of social movement histories in the United States and beyond. Each partner operates its own Zasqua site under its own name and branding, sharing the primitive and its pipeline but not its data or identity.
 
-All description metadata is available in English and Spanish, following ISAD(G) archival description standards. The source code is freely available on [GitHub](https://github.com/neogranadina/zasqua-frontend).
+All description metadata is available in English and Spanish, following ISAD(G) archival description standards. The source code is freely available on [GitHub](https://github.com/neogranadina/zasqua).
 
 [^1]: Definition from the [Muysc cubun](https://muysca.cubun.org/zasqua) digital dictionary, maintained by researchers, students, and members of the Muisca communities of Suba and Chía.
