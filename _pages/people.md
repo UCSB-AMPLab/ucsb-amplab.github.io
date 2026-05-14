@@ -73,13 +73,29 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 *Research Assistant, Telar Project, Fall 2025-*
 
+##### Sofia Cheetham
+
+*Research Assistant, Activating Archives Project, Winter 2026-*
+
 ##### Isabelle Gomez
 
 *Research Assistant, Activating Archives Project, Fall 2025-*
 
+##### Erica Lopez
+
+*Research Assistant, Memories of the City Project, Spring 2026-*
+
+##### Isabella López
+
+*Research Assistant, Collaborative Cataloging Project, Spring 2026-*
+
 ##### Maggie O'Sullivan
 
 *Research Assistant, Collaborative Cataloging Project, Fall 2024-*
+
+##### Corinne Sears
+
+*Research Assistant, Activating Archives Project, Winter 2026-*
 
 ##### Roland Vásquez
 
