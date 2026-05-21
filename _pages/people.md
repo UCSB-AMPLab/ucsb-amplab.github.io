@@ -73,7 +73,7 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 *Research Assistant, Telar Project, Fall 2025-*
 
-##### Sofia Cheetham
+##### Sofia Penna Cheetham
 
 *Research Assistant, Activating Archives Project, Winter 2026-*
 
