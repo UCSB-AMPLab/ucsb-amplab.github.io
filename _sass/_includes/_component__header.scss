@@ -12,12 +12,14 @@
   .header__logo {
     display: block;
     align-self: center;
-    width: 100%;
-    max-width: 300px;
+    // Definite base width so the `auto` grid track doesn't collapse: an inline
+    // SVG (unlike a raster PNG) contributes no intrinsic width to size the track.
+    width: 300px;
+    max-width: 100%;
     position: relative;
     z-index: 10;
 
-    img { max-width: 100%; height: auto; display: block; }
+    img { width: 100%; max-width: 100%; height: auto; display: block; }
 
     @include mq(tabletl) {
       width: 400px;
@@ -189,6 +191,9 @@
 
   .menu__list__item__link,
   .menu__cta__link {
+    // Nav uses Roboto Slab (not the legacy Produkt $title-font) for consistency
+    // with the ampl.tools family, which renders its nav in Roboto Slab.
+    font-family: "Roboto Slab", "Produkt", Georgia, serif;
     font-size: $h4-size-small;
     font-weight: $h4-weight;
     line-height: $h4-lineheight;

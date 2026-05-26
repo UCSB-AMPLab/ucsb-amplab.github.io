@@ -3,7 +3,7 @@ basic_settings:
   favicon_image: /images/favicon.png
 
 header_settings:
-  logo_image: /images/ampl-cropped.png
+  logo_image: /images/ampl-logo.svg
 
 menu_settings:
   menu_items:
