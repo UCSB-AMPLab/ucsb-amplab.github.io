@@ -1,6 +1,6 @@
 ---
 title: Telar
-subtitle: "An open-source visual narrative framework for scholars, students, and communities working with digitised objects."
+subtitle: "An open-source framework for weaving IIIF images, audio, video, and texts into layered visual narratives — for scholars, students, and communities working with digitised objects."
 status: active
 kind: SOFTWARE
 home_order: 1
@@ -10,7 +10,7 @@ leadership:
   - Adelaida Ávila, Neogranadina
   - Natalie Cobo, Neogranadina
 date: 2025-12-02 00:00:00
-description: "An open-source framework for building interactive visual narratives around digitised objects, built on minimal computing principles and free to use."
+description: "An open-source, minimal-computing framework that weaves together IIIF images, audio, video, and texts into layered visual narratives for digital scholarship, public exhibitions, community storytelling, and classroom projects."
 featured_image: /images/tools/telar-cover.jpg
 accent_color: '#A5469A'
 gallery_images:
