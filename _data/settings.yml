@@ -13,6 +13,8 @@ menu_settings:
       url: '/#projects'
     - title: 'Opportunities'
       url: '/#opportunities'
+    - title: 'Workshop'
+      url: '/#workshop'
     - title: 'People'
       url: '/people'
 

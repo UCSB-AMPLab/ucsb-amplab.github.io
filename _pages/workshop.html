@@ -1,0 +1,30 @@
+---
+layout: default
+title: Workshop
+description: Small, self-contained tools from the AMPL workbench, hosted at ampl.tools.
+featured_image: /images/social.jpg
+---
+
+<section class="lp__hero">
+	<div class="wrap">
+		<div class="lp__crumbs"><a href="{{ '/' | relative_url }}">AMPL</a> / Workshop</div>
+		<h1 class="lp__h1">Workshop</h1>
+		<p class="lp__lede">The Workshop is where the working tools of the AMPL community live: small, self-contained tools we build for everyday work in and around archives, classrooms, and meetings. Each is free to use, open source, and built on the same minimal-computing principles as everything else AMPL makes.</p>
+	</div>
+</section>
+
+<div class="wrap">
+	<div class="tools-grid">
+		{% for t in site.data.workshop %}
+			<a class="tool tool--editorial" href="{{ t.url | relative_url }}">
+				<div class="tool__kicker"><span>{{ t.kind | upcase }}</span><span>{{ forloop.index | prepend: "0" }}</span></div>
+				<h2 class="tool__name">{{ t.title }}</h2>
+				<p class="tool__tagline">{{ t.subtitle | strip_html }}</p>
+				<div class="tool__foot">
+					<span class="tool__deps">{% if t.url contains "://" %}{{ t.url | remove: "https://" }}{% else %}ampl.clair.ucsb.edu{{ t.url }}{% endif %}</span>
+					<span class="arrow-link">Open</span>
+				</div>
+			</a>
+		{% endfor %}
+	</div>
+</div>

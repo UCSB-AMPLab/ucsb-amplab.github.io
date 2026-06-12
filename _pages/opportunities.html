@@ -1,0 +1,39 @@
+---
+layout: default
+title: Opportunities
+description: Join the Archives, Memory, and Preservation Lab as a graduate or undergraduate researcher, or as a volunteer.
+featured_image: /images/social.jpg
+---
+
+<section class="lp__hero">
+	<div class="wrap">
+		<div class="lp__crumbs"><a href="{{ '/' | relative_url }}">AMPL</a> / Opportunities</div>
+		<h1 class="lp__h1">Opportunities</h1>
+		<p class="lp__lede">The Archives, Memory, and Preservation Lab is growing, and we are recruiting people at all levels of experience to join the lab. Current openings are listed below — or feel free to suggest a related topic of your own.</p>
+	</div>
+</section>
+
+<div class="wrap">
+	<div class="teach-intro">
+		<div>
+			<h3>For graduates</h3>
+			<p>Interested in archives, memory, or historical preservation? Work with a collection you'd like to help protect, or share with new audiences? Get in touch! We're always looking for opportunities to collaborate.</p>
+		</div>
+		<div>
+			<h3>For undergraduates</h3>
+			<p>AMPL is always looking for interested and motivated undergraduates to join the team. Undergraduates have the opportunity to be involved in all aspects of our research, including archival digitization and description, the development and testing of tools and methods, the production of public-facing narratives, and even helping formulate new research questions. Research assistants are expected to work approximately 3&ndash;6 hours per week in the lab (or remotely, depending on the project), including a weekly lab meeting, and can receive course credit. For some projects we require a two-quarter commitment. Roles are also listed on the <a href="https://ucsb.my.site.com/urca/s/urad">URCA Undergraduate Research Directory</a>.</p>
+		</div>
+	</div>
+
+	{% assign items = site.opportunities | sort: "date" | reverse %}
+	{% for o in items %}
+		<a class="tcard" href="{{ o.url | relative_url }}">
+			<div class="tcard__kind">{{ o.kind | default: o.status | upcase }}</div>
+			<div class="tcard__body">
+				<h4>{{ o.title }}</h4>
+				<p>{{ o.description | strip_html }}</p>
+			</div>
+			<div class="tcard__cadence">{% if o.status == 'active' %}Open{% else %}{{ o.status | capitalize }}{% endif %}</div>
+		</a>
+	{% endfor %}
+</div>

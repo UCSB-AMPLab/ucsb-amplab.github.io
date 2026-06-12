@@ -1,0 +1,40 @@
+---
+layout: default
+title: Projects
+description: Research partnerships and collaborations activating archives in Latin America and beyond.
+featured_image: /images/social.jpg
+---
+
+<section class="lp__hero">
+	<div class="wrap">
+		<div class="lp__crumbs"><a href="{{ '/' | relative_url }}">AMPL</a> / Projects</div>
+		<h1 class="lp__h1">Projects</h1>
+		<p class="lp__lede">AMPL's projects are research partnerships and collaborations that put the lab's tools and methods to work: digitizing and describing endangered collections, building digital archives and narratives with the communities reflected in them, and developing more egalitarian approaches to preserving and activating the past, in Latin America and beyond.</p>
+	</div>
+</section>
+
+<div class="wrap">
+	<div class="proj-list">
+		{% assign items = site.projects | sort: "date" | reverse %}
+		{% for p in items %}
+			{%- assign img = p.featured_image -%}
+			{%- if img and img != "" -%}{%- unless img contains "/" -%}{%- assign img = "/images/projects/" | append: img -%}{%- endunless -%}{%- endif -%}
+			<article class="proj">
+				<a class="proj__img" href="{{ p.url | relative_url }}">
+					{% if img %}<img src="{{ img | relative_url }}" alt="" />{% endif %}
+				</a>
+				<div class="proj__txt">
+					<div class="proj__years">{{ p.status | default: "active" | upcase }}</div>
+					<h2 class="proj__name"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h2>
+					<p class="proj__sum">{{ p.subtitle | strip_html }}</p>
+					{% if p.leadership %}
+					<dl class="proj__meta">
+						<dt>Team</dt>
+						<dd><div class="proj__partners-list">{% for member in p.leadership %}<span>{{ member }}</span>{% endfor %}</div></dd>
+					</dl>
+					{% endif %}
+				</div>
+			</article>
+		{% endfor %}
+	</div>
+</div>

@@ -1,0 +1,15 @@
+# Workshop — the lab's small, self-contained tools, hosted under ampl.tools.
+# Rendered as the fourth stratum on the homepage and aggregated on /workshop.
+# Items link out directly (no /project/ detail pages); `url` may be external.
+- title: Paleography
+  subtitle: "Async paleographic practice on IIIF manuscripts — read, transcribe, and get feedback."
+  kind: PRACTICE
+  url: https://ampl.tools/palaeography
+- title: Scheduling
+  subtitle: "Book a time with a member of the lab, or run a meeting poll."
+  kind: BOOKINGS
+  url: https://ampl.tools/scheduling
+- title: Countdown Timer
+  subtitle: "A simple shared countdown timer for workshops, labs, and class activities."
+  kind: UTILITY
+  url: /timer

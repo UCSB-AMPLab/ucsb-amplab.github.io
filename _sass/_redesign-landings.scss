@@ -56,6 +56,25 @@
 .stickystrip__f:hover { color: var(--accent); background: var(--accent-08); }
 .stickystrip__f.active { color: var(--accent); background: var(--accent-08); }
 
+/* Link-card resets: the landing cards are rendered as <a> elements */
+a.tool, a.tcard {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+a.tcard { display: grid; }
+.proj__name a {
+  color: inherit;
+  text-decoration: none;
+}
+.proj__name a:hover { color: var(--accent); }
+.lp__lede a {
+  color: inherit;
+  border-bottom: 2px dotted var(--accent);
+  text-decoration: none;
+}
+.lp__lede a:hover { color: var(--accent); }
+
 /* ─────────── TOOLS landing — product showcase ─────────── */
 .tools-grid {
   display: grid; grid-template-columns: 1fr 1fr;

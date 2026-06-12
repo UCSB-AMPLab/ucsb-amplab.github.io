@@ -20,6 +20,9 @@ home_strata:
     blurb: Hands-on ways for students and volunteers to get involved.
     past:
       label: Past
+  workshop:
+    layout: side
+    blurb: The working tools of the AMPL community, for scheduling, paleography, and more.
 ---
 
 <section class="hrA__hero">
@@ -36,7 +39,7 @@ home_strata:
 
 <div class="wrap">
 	<div class="strat">
-		{% assign stratum_names = "tools,projects,opportunities" | split: "," %}
+		{% assign stratum_names = "tools,projects,opportunities,workshop" | split: "," %}
 		{% for stratum_name in stratum_names %}
 			{% assign stratum = page.home_strata[stratum_name] %}
 			{% assign idx = forloop.index | prepend: "0" %}
@@ -44,8 +47,14 @@ home_strata:
 			{%- comment -%}
 			Pull every page from the matching collection. Order: home_order ascending
 			(absent => 9999, sorted to the end), then date descending as fallback.
+			Workshop is a data file (_data/workshop.yml), not a collection: its
+			items link out to ampl.tools rather than to /project/ pages.
 			{%- endcomment -%}
-			{% assign all_items = site[stratum_name] | sort: "home_order" %}
+			{% if stratum_name == "workshop" %}
+				{% assign all_items = site.data.workshop %}
+			{% else %}
+				{% assign all_items = site[stratum_name] | sort: "home_order" %}
+			{% endif %}
 
 			{%- comment -%}Split into current vs past based on each page's status field.{%- endcomment -%}
 			{% assign past_items = all_items | where_exp: "i", "i.status == 'completed' or i.status == 'archived' or i.status == 'past'" %}
@@ -60,7 +69,7 @@ home_strata:
 					{% if stratum.blurb %}<div class="layer__gutter-blurb">{{ stratum.blurb }}</div>{% endif %}
 				</div>
 				<div>
-					<h3 class="layer__title">{{ stratum_name | capitalize }}</h3>
+					<h3 class="layer__title"><a href="{{ stratum_name | prepend: '/' | relative_url }}">{{ stratum_name | capitalize }}</a></h3>
 
 					<div class="layer__items">
 						{% for item in current_items %}{% include home-mini.html page=item %}{% endfor %}
