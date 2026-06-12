@@ -7,14 +7,24 @@
 }
 .lp__hero .over { margin-bottom: 16px; }
 .lp__h1 {
-  font-family: var(--font-title);
-  font-size: clamp(52px, 6vw, 80px);
+  font-family: var(--font-display);
+  font-size: clamp(44px, 5vw, 68px);
   font-weight: 500;
   line-height: 0.98;
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
   margin: 0 0 24px;
   color: var(--fg-1);
 }
+.lp__h1 span { display: inline-block; }
+
+/* Occasional glyph-swap on landing headings (slowed-down "glitch");
+   letters are wrapped in spans by js/home.js, which respects
+   prefers-reduced-motion. */
+@keyframes lpSwapPulse {
+  0%, 100% { color: var(--fg-1); }
+  30% { color: var(--accent); }
+}
+.lp__h1 .glyph-swap { animation: lpSwapPulse 0.8s ease; }
 .lp__lede {
   font-family: var(--font-title);
   font-weight: 400;

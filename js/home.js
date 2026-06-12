@@ -54,8 +54,63 @@
 		});
 	}
 
+	function prefersReducedMotion() {
+		return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	}
+
+	// Wraps each character of an element in a span, returning the letter spans.
+	function letterize(el) {
+		var text = el.textContent;
+		el.textContent = '';
+		return text.split('').map(function (ch) {
+			var s = document.createElement('span');
+			s.textContent = ch;
+			el.appendChild(s);
+			return s;
+		}).filter(function (s) { return s.textContent.trim(); });
+	}
+
+	function randomFrom(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+	// Homepage Workshop stratum: a random letter occasionally stutters like a
+	// workshop sign with a loose neon tube.
+	function wireWorkshopFlicker() {
+		if (prefersReducedMotion()) return;
+		var el = document.querySelector('#workshop .layer__title a');
+		if (!el) return;
+		var spans = letterize(el);
+		(function tick() {
+			var s = randomFrom(spans);
+			s.classList.add('flicker');
+			setTimeout(function () { s.classList.remove('flicker'); }, 950);
+			setTimeout(tick, 3200 + Math.random() * 2800);
+		}());
+	}
+
+	// Workshop landing heading only (.lp__h1--playful): every so often a letter
+	// briefly becomes the wrong glyph and is quickly corrected. Serious pages
+	// keep static titles.
+	function wireHeadingGlitch() {
+		if (prefersReducedMotion()) return;
+		var el = document.querySelector('.lp__h1--playful');
+		if (!el) return;
+		var glyphs = '#%?*+=&'.split('');
+		var spans = letterize(el);
+		(function tick() {
+			var s = randomFrom(spans);
+			var orig = s.textContent;
+			s.classList.add('glyph-swap');
+			s.textContent = randomFrom(glyphs);
+			setTimeout(function () { s.textContent = orig; }, 400);
+			setTimeout(function () { s.classList.remove('glyph-swap'); }, 800);
+			setTimeout(tick, 7000 + Math.random() * 6000);
+		}());
+	}
+
 	document.addEventListener('DOMContentLoaded', function () {
 		document.querySelectorAll('[data-typed]').forEach(typeOut);
 		wireMenuToggle();
+		wireWorkshopFlicker();
+		wireHeadingGlitch();
 	});
 }());

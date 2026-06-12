@@ -139,6 +139,20 @@
   text-decoration: none;
 }
 .layer__title a:hover { color: var(--accent); }
+.layer__title span { display: inline-block; }
+
+/* Workshop stratum title: occasional neon-sign flicker on a random letter.
+   Letters are wrapped in spans by js/home.js (reduced-motion aware). */
+@keyframes titleFlicker {
+  0%, 100% { opacity: 1; }
+  10% { opacity: 0.15; }
+  20% { opacity: 1; }
+  32% { opacity: 0.25; }
+  40% { opacity: 1; }
+  55% { opacity: 0.1; }
+  70% { opacity: 1; }
+}
+#workshop .layer__title .flicker { animation: titleFlicker 0.9s steps(1, end); }
 .layer__blurb {
   font-family: var(--font-title); font-weight: 400;
   font-size: 20px; line-height: 30px; color: var(--fg-1);
