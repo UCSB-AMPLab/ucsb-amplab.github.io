@@ -12,6 +12,9 @@
 		var speed = parseInt(el.getAttribute('data-typed-speed'), 10) || 38;
 		var alreadyShown = false;
 		try { alreadyShown = sessionStorage.getItem(typedKey(text)) === '1'; } catch (e) {}
+		if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+			alreadyShown = true;
+		}
 
 		// If we've already typed this in the session, render the final text and a static caret.
 		if (alreadyShown) {

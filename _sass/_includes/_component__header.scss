@@ -104,6 +104,11 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Menu
 
 .menu__toggle {
+  // Rendered as a <button>: neutralise UA button styles.
+  appearance: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
   position: absolute;
   z-index: 1002;
   width: 40px;
