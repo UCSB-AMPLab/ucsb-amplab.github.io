@@ -27,7 +27,7 @@ Komuni, an independent activist collective in Medellín, has taken on the task o
   images = "/images/projects/social-justice-archives-2.jpg"
 %}
 
-With a Planning Grant from UCLA Library's Modern Endangered Archives Program (MEAP), we are working with Komuni to describe and inventory the collections, to work out the rights associated with the materials, and to survey related collections of grassroots organizing in Medellín. Neogranadina provides training and technical infrastructure, with cataloging in [Fisqua](/project/fisqua) and the resulting inventory published open access by MEAP and on Neogranadina's digital archive platform, [abcng.org](https://abcng.org), with a further copy deposited in the UCSB Library.
+With a Planning Grant from UCLA Library's Modern Endangered Archives Program (MEAP), we are working with Komuni to describe and inventory the collections, to work out the rights associated with the materials, and to survey related collections of grassroots organizing in Medellín. Neogranadina provides training and technical infrastructure, with cataloging in [Fisqua](/project/fisqua) and the resulting inventory published open access by MEAP and on Neogranadina's digital archive platform, [zasqua.org](https://zasqua.org), with a further copy deposited in the UCSB Library.
 
 The inventory is a foundation for preserving and activating these archives: for Komuni's community events and workshops, for scholars of social movements, urbanization, and human rights in Latin America, and for a future project to digitize the collections — so that the experiences these materials document, which remain at stake in Medellín's ongoing struggles over land and memory, stay active in the city's present.
 
