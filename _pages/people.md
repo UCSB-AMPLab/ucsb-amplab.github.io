@@ -49,6 +49,8 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 *Curator, Material / Image Research Lab (MIRL), Department of History of Art and Architecture, UCSB*
 
+### Current Students
+
 #### Graduate Students
 
 ##### Lee Leal-Ramírez

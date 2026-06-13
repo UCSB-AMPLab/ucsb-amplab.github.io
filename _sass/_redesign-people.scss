@@ -1,0 +1,33 @@
+/* PEOPLE — staggered blocks. Blocks run sequentially, alternating straight
+   and right-tilted; subheadings ride the same tilt line as the entries.
+   js/home.js wraps blocks and entries and sets the --pp-* custom properties;
+   below 900px they are not applied and the page falls back to a normal
+   single column. */
+
+.people-page {
+  padding: 48px 0 80px;
+}
+
+.people-title {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 4.5vw, 52px);
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  margin: 24px 0 96px;
+  color: var(--fg-1);
+}
+
+.people-blocks .pp-block {
+  max-width: 560px;
+  margin-bottom: 120px;
+}
+
+@media (min-width: 900px) {
+  .people-blocks .pp-block {
+    margin-left: var(--pp-left, 0);
+    margin-top: var(--pp-pull, 0px);
+    margin-bottom: 160px;
+  }
+  .people-blocks .pp-head { margin-left: var(--pp-x, 0px); }
+  .people-blocks .pp-item { margin-left: var(--pp-x, 0px); }
+}

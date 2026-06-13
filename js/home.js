@@ -107,10 +107,88 @@
 		}());
 	}
 
+	// People page (.js-people-stagger): groups the markdown roster into blocks
+	// that stagger horizontally and may tilt by a per-entry margin step, with
+	// subheadings riding the same line as entries. Config is by block order;
+	// the margins only take effect at >=900px (see _redesign-people.scss).
+	function wirePeopleStagger() {
+		var root = document.querySelector('.js-people-stagger');
+		if (!root) return;
+
+		// Break role lines before their season/year term so the term never
+		// wraps mid-way: "…, Collaborative Cataloging Project, | Fall 2024-".
+		root.querySelectorAll('em').forEach(function (em) {
+			em.innerHTML = em.innerHTML.replace(
+				/,\s+((?:Fall|Winter|Spring|Summer|\d{4})[\s\S]*)$/,
+				',<br>$1'
+			);
+		});
+
+		var config = [
+			{ left: '0%', tilt: 0, pull: 0 },
+			{ left: '4%', tilt: 6, pull: -56 },
+			{ left: '9%', tilt: 0, pull: -48 },
+			{ left: '12%', tilt: 5, pull: 0 }
+		];
+
+		// A new block starts at every h3, and at h4s before the first h3.
+		var blocks = [];
+		var current = null;
+		var seenH3 = false;
+		Array.prototype.slice.call(root.children).forEach(function (node) {
+			if (node.tagName === 'H3' || (node.tagName === 'H4' && !seenH3)) {
+				if (node.tagName === 'H3') seenH3 = true;
+				current = { head: node, nodes: [] };
+				blocks.push(current);
+				return;
+			}
+			if (current) current.nodes.push(node);
+		});
+
+		blocks.forEach(function (b, i) {
+			var conf = config[i] || { left: '0%', tilt: 0, pull: 0 };
+			var wrap = document.createElement('div');
+			wrap.className = 'pp-block';
+			root.insertBefore(wrap, b.head);
+			wrap.appendChild(b.head);
+
+			// Items share the tilt line: subheadings (h4) count as items, and
+			// each h5 starts an entry that absorbs its following paragraphs.
+			var items = [];
+			var entry = null;
+			b.nodes.forEach(function (n) {
+				if (n.tagName === 'H4') { items.push(n); entry = null; wrap.appendChild(n); return; }
+				if (n.tagName === 'H5') {
+					entry = document.createElement('div');
+					items.push(entry);
+					wrap.appendChild(entry);
+					entry.appendChild(n);
+					return;
+				}
+				(entry || wrap).appendChild(n);
+			});
+
+			var n = items.length;
+			items.forEach(function (it, j) {
+				var m = conf.tilt > 0 ? j * conf.tilt : conf.tilt < 0 ? (n - 1 - j) * (-conf.tilt) : 0;
+				it.classList.add('pp-item');
+				it.style.setProperty('--pp-x', m + 'px');
+			});
+
+			// The block heading aligns with the top of the tilt line.
+			var m0 = conf.tilt < 0 ? (n - 1) * (-conf.tilt) : 0;
+			b.head.classList.add('pp-head');
+			b.head.style.setProperty('--pp-x', m0 + 'px');
+			wrap.style.setProperty('--pp-left', conf.left);
+			wrap.style.setProperty('--pp-pull', conf.pull + 'px');
+		});
+	}
+
 	document.addEventListener('DOMContentLoaded', function () {
 		document.querySelectorAll('[data-typed]').forEach(typeOut);
 		wireMenuToggle();
 		wireWorkshopFlicker();
 		wireHeadingGlitch();
+		wirePeopleStagger();
 	});
 }());

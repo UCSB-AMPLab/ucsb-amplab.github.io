@@ -2,16 +2,11 @@
 layout: default
 ---
 
-<section class="hero">
-	<div class="wrap grid">
-		<div class="title">
-			<h1 style="">{{ page.title }}</h1>
-			<p class="subtitle">{{ page.overtitle }}</p>
-		</div>
-		<div class="intro">
-			<div class="wrap">
-					{{ page.content }}
-			</div>								
+<section class="people-page">
+	<div class="wrap">
+		<h1 class="people-title">{{ page.title }}</h1>
+		<div class="people-blocks js-people-stagger">
+			{{ page.content }}
 		</div>
 	</div>
 </section>
