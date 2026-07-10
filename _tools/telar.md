@@ -9,6 +9,7 @@ leadership:
   - Santiago Muñoz Arbeláez, History, UT Austin
   - Adelaida Ávila, Neogranadina
   - Natalie Cobo, Neogranadina
+  - Ana María Cárdenas Gasca, Media Arts and Technology, UCSB
 date: 2025-12-02 00:00:00
 description: "An open-source, minimal-computing framework that weaves together IIIF images, audio, video, and texts into layered visual narratives for digital scholarship, public exhibitions, community storytelling, and classroom projects."
 featured_image: /images/tools/telar-cover.jpg
