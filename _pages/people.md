@@ -43,7 +43,7 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 ##### Santiago Muñoz Arbeláez
 
-*Assistant Professor of History, University of Texas at Austin; Co-founder, Neogranadina*
+*Associate Professor of History, University of Texas at Austin; Co-founder, Neogranadina*
 
 ##### Jeff O'Brien
 
