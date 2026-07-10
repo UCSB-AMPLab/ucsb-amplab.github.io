@@ -53,6 +53,10 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 #### Graduate Students
 
+##### Ana María Cárdenas Gasca
+
+*PhD candidate, Media Arts and Technology, UCSB*
+
 ##### Lee Leal-Ramírez
 
 *MA student, Latin American and Iberian Studies Program, UCSB*
