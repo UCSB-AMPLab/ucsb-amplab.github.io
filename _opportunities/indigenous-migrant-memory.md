@@ -33,4 +33,4 @@ This is part of Professor Ramirez-Lopez's long-term work in collaboration with I
 
 Some tasks involve Spanish; others do not.
 
-Research assistants work about 3–6 hours a week, including a weekly lab meeting, and can receive course credit; some projects require a two-quarter commitment. To apply, see this position on UCSB's [Undergraduate Research Directory](https://ucsb.my.site.com/urca/s/urad).
+Research assistants work about 3–6 hours a week, including a weekly lab meeting, and can receive course credit; some projects require a two-quarter commitment. To apply, see this position on UCSB's [Undergraduate Research Directory](https://ucsb.my.site.com/urca/s/funding-program/a0W4X00000gOVmPUAW/the-historical-memory-of-indigenous-migrant-communities-in-the-us-and-mexico).
