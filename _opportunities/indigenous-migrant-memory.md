@@ -15,7 +15,7 @@ accent_color: '#A5469A'
 
 Come work at the Archives, Memory, and Preservation Lab (AMPL) of the Center for Latin American and Iberian Research!
 
-Want to help a community preserve its own history? With Professor Jorge Ramirez-Lopez (Global Studies), we are digitizing and describing two collections that document the political organizing of Indigenous migrants from Oaxaca, Mexico. In the late 1980s and 1990s, these migrants crossed the US–Mexico border in larger numbers than before, amid an economic crisis in their home country. Many worked as farmworkers in harsh conditions, and a cohort of them organized politically as Indigenous people, both in the United States and in their communities of origin in Oaxaca. Among the most prominent organizations was the Frente Mixteco-Zapoteco Binacional (FM-ZB), founded in 1991, which became the Frente Indígena Oaxaqueño Binacional (FIOB) in 1994.
+Want to help a community preserve its own history? With Professor [Jorge Ramirez-Lopez](https://www.global.ucsb.edu/people/jorge-ramirez-lopez) (Global Studies), we are digitizing and describing two collections that document the political organizing of Indigenous migrants from Oaxaca, Mexico. In the late 1980s and 1990s, these migrants crossed the US–Mexico border in larger numbers than before, amid an economic crisis in their home country. Many worked as farmworkers in harsh conditions, and a cohort of them organized politically as Indigenous people, both in the United States and in their communities of origin in Oaxaca. Among the most prominent organizations was the Frente Mixteco-Zapoteco Binacional (FM-ZB), founded in 1991, which became the Frente Indígena Oaxaqueño Binacional (FIOB) in 1994.
 
 This year, two collections from this history are coming to campus:
 
