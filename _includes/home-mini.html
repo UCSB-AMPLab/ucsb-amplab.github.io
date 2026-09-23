@@ -6,7 +6,7 @@ The card label (kicker) comes from page.kind, falling back to page.status upperc
 
 {%- assign p = include.page -%}
 {%- assign kind = p.kind | default: p.status | default: "ACTIVE" | upcase -%}
-{%- assign img = p.featured_image -%}
+{%- assign img = p.thumbnail | default: p.featured_image -%}
 {%- if img and img != "" -%}{%- unless img contains "/" -%}{%- assign img = "/images/projects/" | append: img -%}{%- endunless -%}{%- endif -%}
 
 <a class="mini mini--thumb" href="{{ p.url | relative_url }}">
