@@ -1,5 +1,5 @@
 ---
-title: "Learn to read colonial Spanish manuscripts: the AMPL paleography reading group"
+title: "Learn to read colonial Latin American manuscripts: the AMPL paleography reading group"
 status: active
 kind: START HERE
 order: 1
