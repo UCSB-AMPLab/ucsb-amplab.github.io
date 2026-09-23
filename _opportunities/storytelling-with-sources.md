@@ -30,4 +30,4 @@ Current projects:
 
 No experience with coding or design is needed.
 
-Research assistants work about 3–6 hours a week, including a weekly lab meeting, and can receive course credit; some projects require a two-quarter commitment. To apply, see this position on UCSB's [Undergraduate Research Directory](https://ucsb.my.site.com/urca/s/urad).
+Research assistants work about 3–6 hours a week, including a weekly lab meeting, and can receive course credit; some projects require a two-quarter commitment. We are not yet recruiting for these projects through UCSB's Undergraduate Research Directory. Source editing starts with our [paleography reading group](/project/paleography-reading-group), which is open now.

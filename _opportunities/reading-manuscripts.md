@@ -25,4 +25,4 @@ Put your paleography to work. Once you can read colonial Spanish manuscripts in 
 
 Requires reading knowledge of Spanish. Students who have worked on these projects in the past have gone on to do amazing research on colonial Latin America, even at graduate level.
 
-Research assistants work about 3–6 hours a week, including a weekly lab meeting, and can receive course credit; some projects require a two-quarter commitment. To apply, see this position on UCSB's [Undergraduate Research Directory](https://ucsb.my.site.com/urca/s/urad).
+Research assistants work about 3–6 hours a week, including a weekly lab meeting, and can receive course credit; some projects require a two-quarter commitment. These projects start with our [paleography reading group](/project/paleography-reading-group), which you can apply to through UCSB's [Undergraduate Research Directory](https://ucsb.my.site.com/urca/s/funding-program/a0W4X00000eIcHDUA0/learn-to-read-colonial-latin-american-manuscripts-our-paleography-reading-group).
