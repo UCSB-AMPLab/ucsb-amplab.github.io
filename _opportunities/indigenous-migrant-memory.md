@@ -9,6 +9,7 @@ leadership:
   - Eduardo Castro
 date: 2026-09-22 00:00:00
 description: "Want to help a community preserve its own history? With Professor Jorge Ramirez-Lopez (Global Studies), we are digitizing and describing two collections that document the political organizing of Indigenous migrants from Oaxaca, Mexico."
+featured_image: newspaper-scanning.jpg
 accent_color: '#A5469A'
 ---
 
