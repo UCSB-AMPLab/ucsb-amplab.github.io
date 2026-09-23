@@ -5,6 +5,8 @@ kind: STORYTELLING
 order: 3
 leadership:
   - Juan Cobo Betancourt
+  - Santiago Muñoz Arbeláez, UT Austin
+  - Liz Marchante
   - Eduardo Castro
 date: 2026-09-22 00:00:00
 description: "How do you bring a four-hundred-year-old document to life for people who have never seen one?"
