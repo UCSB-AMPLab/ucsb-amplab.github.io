@@ -28,7 +28,7 @@ The work has two parts, and you can take part in either or both:
 
 **Description.** You will catalog what we digitize in our cataloging platform, Fisqua: who produced each document, when, and what it contains. This is what lets researchers, students, and the communities themselves find and use the materials. Our team reviews your work before it enters the catalog.
 
-This is part of Professor Ramirez-Lopez's long-term work in collaboration with Indigenous migrant organizations and community members to preserve their histories, create popular education modules, and build ethical and reciprocal university–community partnerships. For more on the FIOB, visit [fiob.online](https://fiob.online).
+This is part of Professor Ramirez-Lopez's long-term work in collaboration with Indigenous migrant organizations and community members to preserve their histories, create popular education modules, and build ethical and reciprocal university–community partnerships. You can learn more about Professor Ramirez-Lopez's work on his [faculty page](https://www.global.ucsb.edu/people/jorge-ramirez-lopez). For more on the FIOB, visit [fiob.online](https://fiob.online).
 
 Some tasks involve Spanish; others do not.
 
