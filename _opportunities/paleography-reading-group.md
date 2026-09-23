@@ -21,7 +21,7 @@ These are the contracts, wills, lawsuits, and petitions that scribes and notarie
 Reading these documents opens up much of the rest of the lab's work. Students who have learned to read them go on to:
 
 - catalog notarial records from Tunja, Colombia, for publication on Neogranadina's digital archive, Zasqua;
-- transcribe, translate, and edit sources for classrooms and for readers outside the university;
+- help transcribe, translate, and edit sources for use in classes and for readers outside the university;
 - prepare transcriptions and ground truth for machine-learning models that read colonial manuscripts.
 
 The group requires reading knowledge of Spanish. No experience with manuscripts is needed.
