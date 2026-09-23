@@ -272,10 +272,10 @@ a.tcard { display: grid; }
   padding: 20px 20px 20px 0;
   border-top: 1px solid var(--border);
   cursor: pointer;
-  transition: background 200ms;
+  transition: background 200ms, box-shadow 200ms;
   position: relative;
 }
-.tcard:hover { background: var(--accent-08); padding-left: 20px; }
+.tcard:hover { background: var(--accent-08); box-shadow: -20px 0 0 0 var(--accent-08); }
 .tcard:first-child { border-top: 1px solid var(--border); }
 .tcard__kind {
   font-family: var(--font-display); font-size: 11px; color: var(--accent);
@@ -362,3 +362,5 @@ a.tcard { display: grid; }
   .tcard { grid-template-columns: 1fr; gap: 8px; }
   .tcard__cadence { text-align: left; }
 }
+.teach-intro--stacked { gap: 36px; }
+.teach-intro--stacked p { max-width: 760px; }
