@@ -5,6 +5,7 @@ kind: READING
 order: 4
 leadership:
   - Juan Cobo Betancourt
+  - Liz Marchante
   - Eduardo Castro
 date: 2026-09-22 00:00:00
 description: "Put your paleography to work. Once you can read colonial Spanish manuscripts in our paleography reading group, you can help catalog documents that have not been described since they were written, and train the machine-learning models that will make whole archives searchable."
