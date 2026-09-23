@@ -21,7 +21,7 @@ Want to help a community preserve its own history? With Professor [Jorge Ramirez
 This year, two collections from this history are coming to campus:
 
 - ***El Tequio***, the FM-ZB and FIOB's Spanish-language newspaper, 1991–2005. It covers the organizations' efforts on behalf of their communities in the United States and in the Mexican states of Oaxaca and Baja California.
-- **The personal papers of Algimiro Morales**, a founding member of a Mixteco organization connected with the FM-ZB, who began his own cultural organization in San Diego in the early 2000s. The papers run from the late 1970s and 1980s in Mexico to the late 1980s and early 2000s in San Diego.
+- **The personal papers of Algimiro Morales**, a founding member of the Comité Cívico Popular Mixteco (CCPM), which was part of the FM-ZB, and who began his own cultural organization in San Diego in the early 2000s. The papers run from the late 1970s and 1980s in Mexico to the late 1980s and early 2000s in San Diego.
 
 The work has two parts, and you can take part in either or both:
 
