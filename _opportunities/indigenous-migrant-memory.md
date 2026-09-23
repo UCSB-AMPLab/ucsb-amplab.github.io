@@ -9,7 +9,8 @@ leadership:
   - Eduardo Castro
 date: 2026-09-22 00:00:00
 description: "Want to help a community preserve its own history? With Professor Jorge Ramirez-Lopez (Global Studies), we are digitizing and describing two collections that document the political organizing of Indigenous migrants from Oaxaca, Mexico."
-featured_image: newspaper-scanning.jpg
+featured_image: el-tequio-1992.jpg
+show_hero: false
 accent_color: '#A5469A'
 ---
 
@@ -21,6 +22,10 @@ This year, two collections from this history are coming to campus:
 
 - ***El Tequio***, the FM-ZB and FIOB's Spanish-language newspaper, 1991–2005. It covers the organizations' efforts on behalf of their communities in the United States and in the Mexican states of Oaxaca and Baja California.
 - **The personal papers of Algimiro Morales**, a founding member of a Mixteco organization connected with the FM-ZB, who began his own cultural organization in San Diego in the early 2000s. The papers run from the late 1970s and 1980s in Mexico to the late 1980s and early 2000s in San Diego.
+
+![Cover of El Tequio, no. 2, July 1992](/images/projects/el-tequio-1992.jpg)
+
+*El Tequio*, no. 2, vol. 1, July 1992.
 
 The work has two parts, and you can take part in either or both:
 

@@ -20,7 +20,7 @@ layout: default
 		</div>
 
 		{%- assign hero = page.featured_image -%}
-		{%- if hero and hero != "" -%}
+		{%- if hero and hero != "" and page.show_hero != false -%}
 			{%- unless hero contains "/" -%}{%- assign hero = "/images/projects/" | append: hero -%}{%- endunless -%}
 			<img src="{{ hero | relative_url }}" class="post__featured-image" alt="{{ page.title }}">
 		{%- endif -%}
