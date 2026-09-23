@@ -49,6 +49,10 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 *Curator, Material / Image Research Lab (MIRL), Department of History of Art and Architecture, UCSB*
 
+##### Pilar Ramírez
+
+*Visiting Assistant Professor of History, Pomona College*
+
 ### Current Students
 
 #### Graduate Students
@@ -64,10 +68,6 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 ##### Liz Marchante
 
 *PhD student, Department of History, UCSB*
-
-##### Pilar Ramírez Restrepo
-
-*PhD candidate, Department of History, UCSB*
 
 #### Undergraduate Students
 
