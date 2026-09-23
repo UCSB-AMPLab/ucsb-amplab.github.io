@@ -9,11 +9,21 @@ featured_image: /images/social.jpg
 	<div class="wrap">
 		<div class="lp__crumbs"><a href="{{ '/' | relative_url }}">AMPL</a> / Opportunities</div>
 		<h1 class="lp__h1">Opportunities</h1>
-		<p class="lp__lede">The Archives, Memory, and Preservation Lab is growing, and we are recruiting people at all levels of experience to join the lab. Current openings are listed below — or feel free to suggest a related topic of your own.</p>
+		<p class="lp__lede">The Archives, Memory, and Preservation Lab (AMPL) is a digital humanities lab at UCSB's Center for Latin American and Iberian Research. We work with archives, libraries, and communities in Latin America and the United States to preserve historical materials and make them available to the people who need them. Undergraduates take part in every stage of this work, and we recruit at all levels of experience.</p>
 	</div>
 </section>
 
 <div class="wrap">
+	<div class="teach-intro teach-intro--single">
+		<div class="audience-key audience-key--five">
+			<div class="ak"><div class="tag">Build</div>We design, build, and test low-cost scanners, and the software that runs them, so that small archives and community organizations can digitize their own collections.</div>
+			<div class="ak"><div class="tag">Digitize</div>We photograph manuscripts, newspapers, photographs, and personal papers to archival standards, in the lab and on site.</div>
+			<div class="ak"><div class="tag">Catalog</div>We describe what we digitize (who produced each document, when, and what it contains) so that researchers and communities can find it.</div>
+			<div class="ak"><div class="tag">Read</div>We train students to read sixteenth- and seventeenth-century Spanish handwriting, and to ask research questions of what they read.</div>
+			<div class="ak"><div class="tag">Share</div>We make the results accessible within and beyond the university: we publish archives on <a href="https://zasqua.org">Zasqua</a>, build visual narratives with <a href="{{ '/project/telar' | relative_url }}">Telar</a>, and prepare editions of sources for classrooms and the public.</div>
+		</div>
+	</div>
+
 	<div class="teach-intro">
 		<div>
 			<h3>For graduates</h3>
@@ -25,7 +35,7 @@ featured_image: /images/social.jpg
 		</div>
 	</div>
 
-	{% assign items = site.opportunities | sort: "date" | reverse %}
+	{% assign items = site.opportunities | where: "status", "active" | sort: "order" %}
 	{% for o in items %}
 		<a class="tcard" href="{{ o.url | relative_url }}">
 			<div class="tcard__kind">{{ o.kind | default: o.status | upcase }}</div>
@@ -33,7 +43,7 @@ featured_image: /images/social.jpg
 				<h4>{{ o.title }}</h4>
 				<p>{{ o.description | strip_html }}</p>
 			</div>
-			<div class="tcard__cadence">{% if o.status == 'active' %}Open{% else %}{{ o.status | capitalize }}{% endif %}</div>
+			<div class="tcard__cadence">Open</div>
 		</a>
 	{% endfor %}
 </div>

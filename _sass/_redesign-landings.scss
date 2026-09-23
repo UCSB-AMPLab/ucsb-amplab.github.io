@@ -350,3 +350,15 @@ a.tcard { display: grid; }
 }
 .tweaks .t-toggle.on .t-switch { background: var(--accent); }
 .tweaks .t-toggle.on .t-switch::after { left: 16px; }
+
+.teach-intro--single { grid-template-columns: 1fr; }
+.teach-intro .audience-key--five { grid-template-columns: repeat(5, 1fr); }
+
+@media (max-width: 760px) {
+  .teach-intro { grid-template-columns: 1fr; gap: 32px; }
+  .teach-intro .audience-key,
+  .teach-intro .audience-key--five { grid-template-columns: 1fr; gap: 20px; }
+  .teach-intro .ak { border-left: none; padding: 0; }
+  .tcard { grid-template-columns: 1fr; gap: 8px; }
+  .tcard__cadence { text-align: left; }
+}
