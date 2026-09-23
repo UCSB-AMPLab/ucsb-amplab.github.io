@@ -16,7 +16,7 @@ Come work at the Archives, Memory, and Preservation Lab (AMPL) of the Center for
 
 Have you ever wanted to read a document written more than four hundred years ago, such as a will, a lawsuit, or a petition, in the hand of the person who wrote it? In our weekly Spanish paleography reading group, you will learn to read sixteenth- and seventeenth-century manuscripts from colonial Latin America, working alongside other undergraduates and graduate students. Few undergraduates get to learn this skill, and once you have it, you can work on original historical sources that very few people have read since they were written.
 
-These are the contracts, wills, lawsuits, and petitions that scribes and notaries produced on behalf of the very diverse populations of colonial Latin America. They are written in hands, abbreviations, and spellings that take practice to decipher. Between meetings you can practice on our online [paleography tool](https://ampl.tools/paleography), which lets you transcribe manuscripts at your own pace and get feedback.
+These are the contracts, wills, lawsuits, and petitions that scribes and notaries produced on behalf of the very diverse populations of colonial Latin America. They are written in hands, abbreviations, and spellings that take practice to decipher. Between meetings you can practise on our online [paleography tool](https://ampl.tools/paleography), which lets you transcribe manuscripts at your own pace and get feedback.
 
 Reading these documents opens up much of the rest of the lab's work. Students who have learned to read them go on to:
 
