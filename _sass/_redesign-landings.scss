@@ -362,5 +362,6 @@ a.tcard { display: grid; }
   .tcard { grid-template-columns: 1fr; gap: 8px; }
   .tcard__cadence { text-align: left; }
 }
-.teach-intro--stacked { gap: 36px; }
-.teach-intro--stacked p { max-width: 760px; }
+.teach-intro.teach-intro--stacked { gap: 32px; }
+.teach-intro.teach-intro--stacked h3 { margin: 0 0 12px; }
+.teach-intro.teach-intro--stacked p { max-width: 760px; }
