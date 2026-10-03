@@ -35,7 +35,7 @@ You can see some of the results in the video below:
 %}
 
 #### Social Justice Archives of Medellín
-A third, supported by a planning grant from UCLA Library's Modern Endangered Archives Program, has been a project with Komuni to describe and inventory its collections, which span 1958 to 2006 and document the city's social justice movements. You can [read more about it here](/project/social-justice-archives-medellin).
+A third, supported by a planning grant from UCLA Library's Modern Endangered Archives Program, has been a project with Komuni to inventory and preserve its collections, which span 1958 to 2006 and document the city's social justice movements. You can [read more about it here](/project/social-justice-archives-medellin).
 
 #### Next steps
 We are now preparing an edited volume with our partners in Medellín, to appear in 2028. We also hope to gather with our partners at the 2027 congress of the Latin American Studies Association in Mexico City to explore how community archives in Medellín are used in neighborhood memory and political work, and how digital tools for capturing, describing, and publishing archival materials can serve those practices.
