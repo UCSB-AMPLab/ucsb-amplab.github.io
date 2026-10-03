@@ -3,8 +3,12 @@ title: Activating Archives
 subtitle: "The Living Legacy of Liberation Theology in Medellín, Colombia"
 status: active
 leadership: 
-  - Juan Cobo Betancourt
-  - Natalie Cobo
+  - Juan Cobo Betancourt, History, UCSB
+  - Natalie Cobo, Burdick Fellow, UCSB
+  - Santiago Muñoz Arbeláez, History, UT Austin
+  - Pilar Ramírez Restrepo, History, Pomona College
+  - Eduardo Castro, History, UCSB
+  - Juana Salcedo, Architecture, UT Austin
 date: 2025-08-26 00:00:00
 description: "A collaboration between AMPL, Neogranadina, and grassroots organizations in Medellín, Colombia, around the living legacy of liberation theology and the archives that document it."
 featured_image: memories-of-the-city.jpeg
@@ -18,10 +22,10 @@ gallery_images:
 The project has developed through a series of strands.
 
 #### Memories of the City
-An earlier strand digitized two archives of memory, urban migration, and political struggle in Medellín: photographs of everyday life and political organizing in Moravia taken by Glenn McNatt and Ani Tuzman and preserved by Anne Fischel, whose film *Misa Colombiana* documented the neighborhood's struggles in 1976, and oral histories collected by linguists at the University of Antioquia in the 1990s and 2000s. You can [read more about it here](/project/memories-of-the-city).
+A first strand digitized two archives of memory, urban migration, and political struggle in Medellín: photographs of everyday life and political organizing in Moravia taken by Glenn McNatt and Ani Tuzman and preserved by Anne Fischel, whose film *Misa Colombiana* documented the neighborhood's struggles in 1976, and oral histories collected by linguists at the University of Antioquia in the 1990s and 2000s. You can [read more about it here](/project/memories-of-the-city).
 
 #### A Blueprint for Egalitarian Archival Practice
-One strand was an academic exchange supported by UCSB's Burdick Global Scholars program. This strand brought UCSB undergraduates, graduate students, faculty, and researchers together with colleagues from the University of Texas at Austin to ask three questions: What is an archive? What is its purpose? And how are archives activated? In June 2026, students from AMPL and colleagues from UT Austin traveled to Medellín for two weeks of workshops and exchanges with our partners. 
+A second strand was an academic exchange supported by UCSB's Burdick Global Scholars program. This strand brought UCSB undergraduates, graduate students, faculty, and researchers together with colleagues from the University of Texas at Austin to ask three questions: What is an archive? What is its purpose? And how are archives activated? In June 2026, students from AMPL and colleagues from UT Austin traveled to Medellín for two weeks of workshops and exchanges with our partners. 
 
 You can see some of the results in the video below:
 
@@ -31,7 +35,7 @@ You can see some of the results in the video below:
 %}
 
 #### Social Justice Archives of Medellín
-With a planning grant from UCLA Library's Modern Endangered Archives Program, we are working with Komuni to describe and inventory its collections, which span 1958 to 2006 and document the city's social justice movements. You can [read more about it here](/project/social-justice-archives-medellin).
+A third, supported by a planning grant from UCLA Library's Modern Endangered Archives Program, has been a project with Komuni to describe and inventory its collections, which span 1958 to 2006 and document the city's social justice movements. You can [read more about it here](/project/social-justice-archives-medellin).
 
 #### Next steps
 We are now preparing an edited volume with our partners in Medellín, to appear in 2028. We also hope to gather with our partners at the 2027 congress of the Latin American Studies Association in Mexico City to explore how community archives in Medellín are used in neighborhood memory and political work, and how digital tools for capturing, describing, and publishing archival materials can serve those practices.

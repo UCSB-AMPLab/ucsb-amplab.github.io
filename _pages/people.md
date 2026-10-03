@@ -53,6 +53,10 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 *Visiting Assistant Professor of History, Pomona College*
 
+##### Juana Salcedo
+
+*Assistant Professor of Practice, School of Architecture, University of Texas at Austin*
+
 ### Current Students
 
 #### Graduate Students
@@ -60,10 +64,6 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 ##### Ana María Cárdenas Gasca
 
 *PhD candidate, Media Arts and Technology, UCSB*
-
-##### Lee Leal-Ramírez
-
-*MA student, Latin American and Iberian Studies Program, UCSB*
 
 ##### Liz Marchante
 
@@ -79,11 +79,11 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 *Research Assistant, Activating Archives Project, Winter 2026-*
 
-##### Isabelle Gomez
+##### Isabelle Gómez
 
 *Research Assistant, Activating Archives Project, Fall 2025-*
 
-##### Erica Lopez
+##### Erica López
 
 *Research Assistant, Memories of the City Project, Spring 2026-*
 
@@ -95,7 +95,7 @@ Eduardo Castro is a PhD student in the Department of History at UCSB.
 
 *Research Assistant, Collaborative Cataloging Project, Winter 2024-*
 
-##### Ashley Vazquez
+##### Ashley Vázquez
 
 *Research Assistant, Activating Archives Project, Fall 2025-*
 
