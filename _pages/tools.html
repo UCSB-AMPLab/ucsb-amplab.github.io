@@ -9,7 +9,7 @@ featured_image: /images/social.jpg
 	<div class="wrap">
 		<div class="lp__crumbs"><a href="{{ '/' | relative_url }}">AMPL</a> / Tools</div>
 		<h1 class="lp__h1">Tools</h1>
-		<p class="lp__lede">AMPL builds open-source primitives for community archiving: the <a href="{{ '/project/digitization-toolkit' | relative_url }}">Digitization Toolkit</a> captures, <a href="{{ '/project/fisqua' | relative_url }}">Fisqua</a> catalogs, <a href="{{ '/project/zasqua' | relative_url }}">Zasqua</a> publishes, and <a href="{{ '/project/telar' | relative_url }}">Telar</a> tells. They are designed to work together as a full pipeline, but each can be used independently — with other tools, or on its own — depending on what an archive needs. All are built on open standards and minimal-computing infrastructure, so the work an archive puts into them belongs to the archive.</p>
+		<p class="lp__lede">AMPL builds open-source primitives for community archiving: <a href="{{ '/project/captua' | relative_url }}">Captua</a> captures, <a href="{{ '/project/fisqua' | relative_url }}">Fisqua</a> catalogs, <a href="{{ '/project/zasqua' | relative_url }}">Zasqua</a> publishes, and <a href="{{ '/project/telar' | relative_url }}">Telar</a> tells. They are designed to work together as a full pipeline, but each can be used independently — with other tools, or on its own — depending on what an archive needs. All are built on open standards and minimal-computing infrastructure, so the work an archive puts into them belongs to the archive. Captua is developed through the <a href="{{ '/project/digitization-toolkit' | relative_url }}">Digitization Toolkit project</a>, which brings together scanning hardware, software, and documentation.</p>
 	</div>
 </section>
 
@@ -22,7 +22,7 @@ featured_image: /images/social.jpg
 			<a class="tool tool--product" href="{{ t.url | relative_url }}">
 				<div class="tool__kicker"><span>{{ t.kind | default: t.status | upcase }}</span><span>{{ forloop.index | prepend: "0" }}</span></div>
 				<h2 class="tool__name">{{ t.title }}</h2>
-				{% if img %}<img class="tool__img" src="{{ img | relative_url }}" alt="" />{% endif %}
+				{% if img %}<img class="tool__img{% if t.brand_image %} tool__img--brand{% endif %}" src="{{ img | relative_url }}" alt="" />{% endif %}
 				<p class="tool__tagline">{{ t.subtitle | strip_html }}</p>
 				<div class="tool__foot"><span class="arrow-link">Explore</span></div>
 			</a>

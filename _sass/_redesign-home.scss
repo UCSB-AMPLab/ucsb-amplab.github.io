@@ -660,3 +660,44 @@
   .home__cta { padding: 48px 0 16px; margin-top: 48px; }
   .home__cta h3 { font-size: 22px; }
 }
+
+/* Tool families retain the homepage stratum and use each tool's own identity. */
+.home-tools {
+  position: relative;
+  min-width: 0;
+  .group-title { font-family: var(--font-title); font-size: 26px; line-height: 1.2; font-weight: 500; letter-spacing: -.4px; margin: 0 0 10px; }
+  .group-lede { font-family: var(--font-title); font-size: 15px; line-height: 1.6; color: var(--fg-2); margin: 0 0 22px; }
+  .pipeline-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+  .pipeline-card, .story-card { min-width: 0; border: 1px solid var(--border); background: #fff; display: flex; flex-direction: column; }
+  .pipeline-art, .story-art { height: 116px; display: flex; align-items: center; justify-content: center; }
+  .pipeline-art img { width: 95px; height: 91px; object-fit: contain; }
+  .captua .pipeline-art { background: #1A1C1B; }
+  .fisqua .pipeline-art { background: #f3efe5; }
+  .zasqua .pipeline-art { background: #8B2942; }
+  .card-body { padding: 20px; display: flex; flex-direction: column; flex: 1; }
+  .role { font-family: var(--font-display); font-size: 11px; line-height: 1.5; color: #74546d; margin-bottom: 10px; }
+  h4 { font-family: var(--font-title); font-size: 25px; line-height: 1.2; letter-spacing: -.4px; margin: 0 0 10px; }
+  .card-body p { font-family: var(--font-title); font-size: 15px; line-height: 1.55; color: var(--fg-2); margin: 0 0 20px; }
+  .card-body a { margin-top: auto; display: flex; justify-content: space-between; gap: 8px; font-family: var(--font-body); font-size: 13px; color: var(--fg-1); }
+  .card-body a:hover { color: var(--accent); }
+  .card-body a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+  .group-note { font-family: var(--font-body); font-size: 13px; line-height: 1.5; color: var(--fg-2); margin: 14px 0 0; }
+  .story-group { margin-top: 32px; padding-top: 28px; border-top: 1px solid var(--border); }
+  .story-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .story-art { padding: 20px 28px; box-sizing: border-box; }
+  .story-art img { width: 100%; height: 100%; object-fit: contain; }
+  .telar-approved { background: #883C36; }
+  .compositor-approved { background: #333333; }
+  .story-card h4 { font-size: 23px; }
+}
+@media (max-width: 760px) {
+  .home-tools {
+    .pipeline-grid, .story-grid { grid-template-columns: minmax(0, 1fr); }
+    .pipeline-card { display: grid; grid-template-columns: 100px minmax(0, 1fr); }
+    .pipeline-art { height: 100%; min-height: 130px; }
+    .pipeline-art img { width: 75px; }
+    .card-body { padding: 18px; }
+    .card-body p { font-size: 14px; }
+    .group-title { font-size: 23px; }
+  }
+}

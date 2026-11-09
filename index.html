@@ -7,7 +7,7 @@ featured_image: /images/social.jpg
 home_strata:
   tools:
     layout: banner
-    blurb: Four interoperable open-source tools for digitizing, cataloging, publishing, and storytelling — built to run on minimal infrastructure.
+    blurb: Open-source tools for archival practice, research, and teaching.
     past:
       label: Archived
   projects:
@@ -71,9 +71,13 @@ home_strata:
 				<div>
 					<h3 class="layer__title"><a href="{{ stratum_name | prepend: '/' | relative_url }}">{{ stratum_name | capitalize }}</a></h3>
 
+					{% if stratum_name == "tools" %}
+						{% include home-tools.html %}
+					{% else %}
 					<div class="layer__items">
 						{% for item in current_items %}{% include home-mini.html page=item %}{% endfor %}
 					</div>
+					{% endif %}
 
 					{% if stratum.past and past_items.size > 0 %}
 						<div class="layer__past layout--side">

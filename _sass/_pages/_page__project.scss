@@ -13,6 +13,28 @@
   }
 
   .post__content {
+    .tool-screenshot {
+      margin: 32px 0;
+      max-width: 656px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+      }
+
+      figcaption {
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 1.5;
+        color: var(--fg-2);
+      }
+
+    }
+
     sup {
       line-height: 0;
     }

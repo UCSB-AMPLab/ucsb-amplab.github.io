@@ -86,7 +86,7 @@ a.tcard { display: grid; }
 
 /* ─────────── TOOLS landing — product showcase ─────────── */
 .tools-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 0;
   border-top: none;
 }
@@ -134,6 +134,7 @@ a.tcard { display: grid; }
   transition: filter 240ms;
 }
 .tool:hover .tool__img { filter: saturate(1.1); }
+.tool__img--brand { height: auto; object-fit: contain; }
 .tool--editorial .tool__img { height: 260px; }
 .tool__blurb {
   font-family: var(--font-body); font-weight: 400;
@@ -355,6 +356,9 @@ a.tcard { display: grid; }
 .teach-intro .audience-key--five { grid-template-columns: repeat(5, 1fr); }
 
 @media (max-width: 760px) {
+  .tools-grid { grid-template-columns: minmax(0, 1fr); }
+  .tool { padding: 28px 24px 32px; border-right: none; }
+  .tool__name { font-size: clamp(30px, 8vw, 44px); overflow-wrap: anywhere; }
   .teach-intro { grid-template-columns: 1fr; gap: 32px; }
   .teach-intro .audience-key,
   .teach-intro .audience-key--five { grid-template-columns: 1fr; gap: 20px; }
